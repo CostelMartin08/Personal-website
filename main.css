@@ -1,0 +1,31 @@
+.first-way {
+    color: #0C3B2E!important;
+}
+
+.second-way {
+    color: #F2F2F2;
+}
+
+.bg-first-way {
+    background-color: #0C3B2E!important;
+}
+
+.bg-second-way {
+    background-color: #F2F2F2;
+}
+
+.main-font{
+    font-weight: 600;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.position{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+
+a{
+    color:#F2F2F2;
+    text-decoration: none;
+}
