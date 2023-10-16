@@ -1,5 +1,5 @@
 .first-way {
-    color: #0C3B2E!important;
+    color: #0C3B2E !important;
 }
 
 .second-way {
@@ -7,25 +7,31 @@
 }
 
 .bg-first-way {
-    background-color: #0C3B2E!important;
+    background-color: #0C3B2E !important;
 }
 
 .bg-second-way {
     background-color: #F2F2F2;
 }
 
-.main-font{
-    font-weight: 600;
+.main-font {
     font-family: 'Open Sans', sans-serif;
+    font-weight: 600;
 }
 
-.position{
-    display:flex;
+.position {
+    display: flex;
     justify-content: center;
     align-items: center;
 }
 
-a{
-    color:#F2F2F2;
+a {
+    color: #F2F2F2;
     text-decoration: none;
+}
+
+
+.this {
+    transition: padding-top 2s;
+ 
 }
