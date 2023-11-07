@@ -1,0 +1,53 @@
+.first-way {
+    color: #0C3B2E !important;
+}
+
+.second-way {
+    color: #F2F2F2;
+}
+
+.bg-first-way {
+    background-color: #0C3B2E !important;
+}
+
+.bg-second-way {
+    background-color: #F2F2F2;
+}
+
+.bg-last-way {
+    background-color: #D43900;
+}
+
+.main-font {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 600;
+}
+
+.position {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+a {
+    color: #F2F2F2;
+    text-decoration: none;
+}
+
+
+
+
+.btn-style {
+    background-color: transparent;
+    padding: 0;
+    border: none;
+
+}
+
+.a-btn-style {
+    cursor: pointer;
+    font-size: 1.2em;
+    color: white;
+    text-align: start;
+    width: auto;
+}
