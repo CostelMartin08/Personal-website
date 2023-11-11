@@ -5,7 +5,7 @@ function IntersectionObserverComponent({ componentRefs, setCurrentIndex }) {
     const options = {
       root: null,
       rootMargin: "0px",
-      threshold: 0.5,
+      threshold: 1,
     };
 
     const callback = (entries) => {

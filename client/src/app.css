@@ -4,12 +4,13 @@
     overscroll-behavior-y: contain;
     scroll-snap-type: y mandatory;
     width: 100%;
-    height: 100vh;
+    height: 100dvh;
+
 
 }
 
 #page>* {
-    height: 100%;
+    height: 100dvh;
 }
 
 ::-webkit-scrollbar {
