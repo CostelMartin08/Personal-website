@@ -13,13 +13,13 @@
 
 .carousel-indicators {
 
-    bottom: -50px;
+    bottom: -3rem;
 }
 
 .carousel-inner {
 
     padding-bottom: 5px;
-    width: 360px;
+    width: 310px;
 }
 
 .font-size-courses {
@@ -35,10 +35,10 @@
 .columns-courses {
 
     height: 500px;
-    width: 340px;
+    width: 300px;
     position: relative;
     border-radius: 20px;
-    padding: 28px;
+    padding: 20px;
     border: 2px solid black;
     transition: all 0.4s;
 }

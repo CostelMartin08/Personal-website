@@ -5,13 +5,13 @@
 
 .grd-section1 {
     z-index: 50;
-    height: 75%;
-    
+    height: 80%;
+
 }
 
 .grd-section2 {
 
-    height: 25%;
+    height: 20%;
 }
 
 
@@ -22,7 +22,7 @@
 .fa-xl {
 
     padding: 0px 35px;
-    font-size: 90px;
+    font-size: 70px;
 
 
 }
@@ -64,15 +64,17 @@
     --bs-gradient: none;
 }
 
-
+.title-page {
+    margin-left: 8px;
+}
 
 /* -------------------------------------------------------------------------- */
 /*                                    Card                                    */
 /* -------------------------------------------------------------------------- */
 
 .columns-project {
-    height: 350px;
-    width: 340px;
+    height: 370px;
+    width: 300px;
     position: relative;
     border-radius: 20px;
     padding: 30px;
@@ -153,7 +155,6 @@
     background-color: #0C3B2E;
     color: #F2F2F2;
     overflow: hidden;
-    padding-bottom: 50px;
 }
 
 .logo-content {

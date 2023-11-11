@@ -20,9 +20,9 @@ const Projects = forwardRef((props, ref) => {
 
             <div className="d-grid justify-content-center align-content-center container grd-section1 padding ">
 
-                <div className="first-way main-font ">
-                    <h3 className="h2 w-100 ps-2 ps-md-0 font-size-courses">Projects</h3>
-                </div>
+               
+                    <h3 className="first-way main-font h2 title-page ms-lg-0  font-size-courses">Projects</h3>
+           
 
                 <div className="d-md-none">
 

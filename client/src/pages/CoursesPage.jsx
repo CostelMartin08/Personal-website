@@ -22,8 +22,8 @@ const Courses = forwardRef((props, ref) => {
 
             <div className="d-grid justify-content-center align-content-center vh-100">
 
-                <div className="container-fluid second-way main-font ">
-                    <h3 className="h2 font-size-courses">Courses</h3>
+                <div className="second-way main-font ">
+                    <h3 className="h2 title-page font-size-courses">Courses</h3>
                 </div>
 
                 <div className="d-flex d-md-none">
