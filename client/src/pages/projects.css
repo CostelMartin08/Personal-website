@@ -5,13 +5,13 @@
 
 .grd-section1 {
     z-index: 50;
-    height: 80%;
+    height: 80dvh;
 
 }
 
 .grd-section2 {
 
-    height: 20%;
+    height: 20dvh;
 }
 
 

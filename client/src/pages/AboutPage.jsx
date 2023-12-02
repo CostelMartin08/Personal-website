@@ -7,7 +7,7 @@ const AboutPage = forwardRef((props, ref) => {
 
         <section className="about-page " id='1' ref={ref}>
 
-            <div className="container position-relative h-100 w-75 d-flex flex-column justify-content-center p-0">
+            <div className="container position-relative about-page-h w-75 d-flex flex-column justify-content-center p-0">
 
                 <div className="svg-set1">
                     <svg viewBox="30 -205 80 80" width="100" height="100" xmlns="http://www.w3.org/2000/svg">

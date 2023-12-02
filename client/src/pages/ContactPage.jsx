@@ -65,7 +65,7 @@ const Contact = forwardRef((props, ref) => {
     return (
         <section className="contact-page" id='4' ref={ref}>
 
-            <div className="container h-100 d-flex flex-column justify-content-center align-items-center">
+            <div className="container contact-pg-h d-flex flex-column justify-content-center align-items-center">
 
                 {!succesMessage ?
 

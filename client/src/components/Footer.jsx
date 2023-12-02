@@ -41,7 +41,7 @@ const Footer = forwardRef((props, ref) => {
     return (
         <footer style={style.footer} id='5' ref={ref}>
 
-            <div className="container d-flex flex-column align-items-center justify-content-center px-md-5 h-100">
+            <div className="container d-flex flex-column align-items-center justify-content-center px-md-5 footer-h">
 
 
 

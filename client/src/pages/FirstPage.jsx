@@ -20,7 +20,7 @@ const FirstPage = forwardRef((props, ref) => {
 
         <section className="first-page" id='0' ref={ref} >
 
-            <div className="h-100 row gx-0">
+            <div className="first-page-h row gx-0">
 
                 <div className="clr-section1 h-adp-sec col-sm-4 d-flex p-0 main-font">
 

@@ -20,7 +20,7 @@ const Courses = forwardRef((props, ref) => {
 
         <section className="courses-page" id='2' ref={ref}>
 
-            <div className="d-grid justify-content-center align-content-center vh-100">
+            <div className="crs-pg d-grid justify-content-center align-content-center">
 
                 <div className="second-way main-font ">
                     <h3 className="h2 title-page font-size-courses">Courses</h3>

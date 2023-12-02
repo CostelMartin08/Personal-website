@@ -7,6 +7,10 @@
 
 }
 
+.first-page-h {
+    height: 100dvh;
+}
+
 .clr-section1 {
     display: flex;
     justify-content: center;
@@ -96,6 +100,9 @@
     scroll-snap-align: start;
 }
 
+.about-page-h {
+    height: 100dvh;
+}
 
 .about-font {
 
@@ -158,6 +165,10 @@
 .contact-page {
 
     scroll-snap-align: start;
+}
+
+.contact-pg-h {
+    height: 100dvh;
 }
 
 .form-heading {
