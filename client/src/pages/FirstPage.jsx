@@ -25,7 +25,7 @@ const FirstPage = forwardRef((props, ref) => {
                 <div className="clr-section1 h-adp-sec col-sm-4 d-flex p-0 main-font">
 
                     <div className="section1-content">
-                        <h1 className="font-size first-way ">Junior <br /> Frontend <br /> Developer. </h1>
+                        <h1 className="font-size-f first-way ">Junior <br /> Frontend <br /> Developer. </h1>
 
                         <p>I enjoy developing utility-focused frontend products while also providing a pleasant user experience.</p>
                     </div>

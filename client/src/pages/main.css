@@ -44,6 +44,11 @@
     font-weight: 700;
 }
 
+.font-size-f{
+    font-size: 40px;
+    font-weight: 700;
+}
+
 .clr-section2 {
     position: relative;
     background-color: #0C3B2E;
@@ -265,6 +270,9 @@
     .font-size {
         font-size: 34px;
     }
+    .font-size-f{
+        font-size: 34px;
+    }
 
     .framework-brd {
         height: 250px;
@@ -303,6 +311,9 @@
     }
 
     .font-size {
+        font-size: 40px;
+    }
+    .font-size-f{
         font-size: 40px;
     }
 
@@ -366,6 +377,9 @@
     .font-size {
         font-size: 50px;
     }
+    .font-size-f{
+        font-size: 50px;
+    }
 
     .framework-brd {
         height: 300px;
@@ -420,4 +434,12 @@
 
 }
 
-/*RestaBILESTE ABOTPAGE SI CONTACT CU NOILE VALORI!!!!!!*/
+@media only screen and (max-width: 768px) {
+
+    .font-size{
+        font-size: 25px;
+        font-weight: 700;
+        
+    }
+
+}

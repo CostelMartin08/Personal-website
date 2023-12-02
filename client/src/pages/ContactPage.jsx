@@ -72,7 +72,7 @@ const Contact = forwardRef((props, ref) => {
                     <div className="container-fluid contact-pad h-100 d-flex flex-column justify-content-center position-relative">
 
                         <div className="text-center px-md-5 mb-sm-4 main-font">
-                            <h4 className="form-heading main-font">Send a message!</h4>
+                            <h4 className="form-heading main-font font-size">Send a message!</h4>
                             <p className="form-text">Whether you want to ask me something or just say hello, you can do it.</p>
                         </div>
 
