@@ -44,7 +44,7 @@
     font-weight: 700;
 }
 
-.font-size-f{
+.font-size-f {
     font-size: 40px;
     font-weight: 700;
 }
@@ -203,6 +203,7 @@
 
 .contact-pad {
     width: 100%;
+ 
 }
 
 .succes {
@@ -270,7 +271,8 @@
     .font-size {
         font-size: 34px;
     }
-    .font-size-f{
+
+    .font-size-f {
         font-size: 34px;
     }
 
@@ -313,7 +315,8 @@
     .font-size {
         font-size: 40px;
     }
-    .font-size-f{
+
+    .font-size-f {
         font-size: 40px;
     }
 
@@ -345,7 +348,7 @@
     }
 
     .form-heading {
-        font-size: 35px;
+        font-size: 30px;
     }
 
     .form-text {
@@ -364,6 +367,10 @@
         font-size: 16px;
 
     }
+    .contact-pad {
+        margin-top: 10dvh;
+    }
+    
 
 }
 
@@ -375,9 +382,10 @@
     }
 
     .font-size {
-        font-size: 50px;
+        font-size: 40px;
     }
-    .font-size-f{
+
+    .font-size-f {
         font-size: 50px;
     }
 
@@ -436,10 +444,10 @@
 
 @media only screen and (max-width: 768px) {
 
-    .font-size{
+    .font-size {
         font-size: 25px;
         font-weight: 700;
-        
+
     }
 
 }

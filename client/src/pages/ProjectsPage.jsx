@@ -29,7 +29,7 @@ const Projects = forwardRef((props, ref) => {
                     <div className="carousel slide" id="myProjectsCarousel" data-bs-ride="carousel">
 
                         <div className="carousel-indicators">
-                            <button type="button" data-bs-target="#myProjectsCarousel" data-bs-slide-to="0" class="active bg-first-way" aria-label="Slide 1" aria-current="true"></button>
+                            <button type="button" data-bs-target="#myProjectsCarousel" data-bs-slide-to="0" className="active bg-first-way" aria-label="Slide 1" aria-current="true"></button>
                             <button type="button" data-bs-target="#myProjectsCarousel" data-bs-slide-to="1" aria-label="Slide 2" className='bg-first-way'></button>
                             <button type="button" data-bs-target="#myProjectsCarousel" data-bs-slide-to="2" aria-label="Slide 3" className='bg-first-way'></button>
                             <button type="button" data-bs-target="#myProjectsCarousel" data-bs-slide-to="3" aria-label="Slide 4" className='bg-first-way'></button>
