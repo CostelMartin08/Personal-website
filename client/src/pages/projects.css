@@ -28,7 +28,7 @@
 }
 
 .btn-success {
-    width: 120px;
+    width: 45%;
     --bs-btn-color: #fff;
     --bs-btn-bg: #0C3B2E;
     --bs-btn-border-color: #0C3B2E;
@@ -47,7 +47,7 @@
 }
 
 .btn-outline-success {
-    width: 120px;
+    width: 45%;
     --bs-btn-color: #0C3B2E;
     --bs-btn-border-color: #0C3B2E;
     --bs-btn-hover-color: #fff;
@@ -74,50 +74,63 @@
 /*                                    Card                                    */
 /* -------------------------------------------------------------------------- */
 
-.columns-project {
-    height: 370px;
-    width: 300px;
+.card-border {
+
     position: relative;
+    max-width: 300px;
     border-radius: 20px;
-    padding: 30px;
+    padding-left: 20px;
+    padding-right: 20px;
     border: 2px solid black;
     transition: all 0.4s;
 }
 
-.columns-project:hover {
+.card-border:hover {
     box-shadow: 4px 4px 0 1px rgba(0, 0, 0);
 }
 
+.card-body {
 
-.columns-project .container-project {
+    height: 48dvh;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     flex-direction: column;
-    align-items: flex-start;
-    gap: 8px;
-    margin-bottom: 10px;
+
 }
 
-.paragraph {
+.title-card {
     margin: 0;
-    font-size: 17px;
+    font-size: 18px;
     font-weight: 900;
     border-bottom: 2px solid black;
     cursor: pointer;
     transition: all 0.4s;
 }
 
-.description {
+.title-project {
+    font-size: 20px;
+    margin: 0;
+    padding-top: 5px;
+}
+
+.content-card {
     text-align: start;
     line-height: 1.5;
-    font-size: 14px;
+    font-size: 15px;
     font-weight: 500;
     margin-bottom: 0px;
     text-indent: 3px;
 }
 
+.nav-card {
+    display: flex;
+    justify-content: space-between;
+
+
+}
+
 .btn-orange {
-    padding: 7px 15px;
+    padding: 10px;
     border: 1px solid black;
     background-color: orange;
     border-radius: 10px;
@@ -128,18 +141,12 @@
     transition: all 0.4s;
 }
 
-.columns-project:hover .btn {
+.card-border:hover .btn {
     box-shadow: 2px 2px 0 1px rgba(0, 0, 0);
 }
 
 .btn-orange:focus {
     background: transparent;
-}
-
-.second-heading {
-    font-size: 20px;
-    font-weight: 600;
-    margin-bottom: 0px;
 }
 
 
@@ -175,6 +182,46 @@
 
 /* ---------------------------------END-------------------------------------- */
 
+/* -------------------------------------------------------------------------- */
+/*                                 Height set                                 */
+/* -------------------------------------------------------------------------- */
+
+
+@media only screen and (max-height: 740px) {
+
+    .card-body {
+        height: 55dvh;
+    }
+
+}
+
+@media only screen and (min-height: 1000px) {
+
+    .card-body {
+        height: 45dvh;
+
+    }
+
+
+
+}
+
+
+@media only screen and (min-height: 1200px) {
+
+    .card-body {
+        height: 38dvh;
+
+    }
+
+
+
+}
+
+/* -------------------------------------END---------------------------------- */
+
+
+
 @media only screen and (min-width: 576px) and (max-width: 768px) {
 
     .carousel-set-prevP {
@@ -185,10 +232,20 @@
         right: -45px;
     }
 
+
 }
 
 
 @media only screen and (min-width: 768px) and (max-width: 1200px) {
+
+
+
+    .card-border {
+        margin: 0;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
 
     .columns-project {
         padding: 20px;
@@ -196,16 +253,10 @@
         height: 320px;
     }
 
-    .description {
-        font-size: 13px;
-    }
 
     .prjc {
-        width: 720px;
-    }
+        width: 640px;
 
-    .prjc-adjst {
-        height: 325px;
     }
 
     .carousel-set-prevP {
@@ -231,22 +282,12 @@
 
 @media only screen and (min-width: 1200px) {
 
-    .columns-project {
-
-        width: 100%;
-        height: 360px;
+    .btn-success{
+        width: 46%;
     }
 
-    .description {
-        font-size: 13px;
-    }
-
-    .btn-outline-success {
-        width: 80px;
-    }
-
-    .btn-success {
-        width: 80px;
+    .btn-outline-success{
+        width: 46%;
     }
 
     .fa-xl {

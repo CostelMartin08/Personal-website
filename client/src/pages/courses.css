@@ -6,9 +6,10 @@
 
 }
 
-.crs-pg{
+.crs-pg {
     height: 100dvh;
 }
+
 .crsl-btn-md {
 
     z-index: 0;
@@ -35,67 +36,95 @@
 /*                                    Card                                    */
 /* -------------------------------------------------------------------------- */
 
-.columns-courses {
 
-    height: 480px;
-    width: 300px;
+.card-border-courses {
+
     position: relative;
+    max-width: 320px;
     border-radius: 20px;
-    padding: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
     border: 2px solid black;
     transition: all 0.4s;
 }
 
-.columns-courses:hover {
+.card-border-courses:hover {
     box-shadow: 4px 4px 0 1px rgba(0, 0, 0);
 }
 
-.columns-courses .container-course {
+.card-body-courses {
+
+    height: 55dvh;
     display: flex;
-    justify-content: space-between;
-    align-items: flex-start;
+    justify-content: space-evenly;
     flex-direction: column;
-    gap: 8px;
-    margin-bottom: 10px;
+
 }
 
+
 .school {
-    padding: 7px 15px;
+
+    margin: 0;
+    max-width: fit-content;
+    padding: 12px;
     border: 1px solid black;
     background-color: orange;
     border-radius: 10px;
     letter-spacing: 1px;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.4s;
+
 
 }
 
-.container-course p {
-    margin: 0px;
+
+.title-card-courses {
+    margin: 0;
+    font-size: 15.5px;
+    font-weight: 700;
+    cursor: pointer;
+    transition: all 0.4s;
 }
 
-.title-course {
-    font-size: 17px;
+.title-card-courses p:last-child {
+    margin: 2px;
+
+}
+
+.title-card-courses .title-course {
+    margin: 0;
+    font-size: 15px;
     font-weight: 900;
     border-bottom: 1px solid black;
     margin-bottom: 6px;
     transition: all 0.4s;
 }
 
-.description-course {
+.content-card-courses {
     text-align: start;
-    line-height: 1.6;
+    line-height: 1.5;
     font-size: 13.5px;
     font-weight: 500;
     margin-bottom: 0px;
     text-indent: 3px;
 }
 
+.title-course {
+    margin: 5px;
+    font-size: 14px;
+    font-weight: 900;
+}
+
 .teck {
-    font-size: 15px;
+    font-size: 14px;
     font-weight: 500;
     margin-top: 10px;
 }
 
 .teck ul {
+    font-size: medium;
     margin-left: 15px;
     list-style: square;
     line-height: 1.9;
@@ -108,6 +137,44 @@
 
 /* -------------------------------------END---------------------------------- */
 
+
+/* -------------------------------------------------------------------------- */
+/*                                 Height set                                 */
+/* -------------------------------------------------------------------------- */
+
+
+@media only screen and (max-height: 740px) {
+
+    .card-body-courses {
+        height: 70dvh;
+    }
+
+}
+
+@media only screen and (min-height: 1000px) {
+
+    .card-body-courses {
+        height: 45dvh;
+
+    }
+
+
+
+}
+
+
+@media only screen and (min-height: 1200px) {
+
+    .card-body-courses {
+        height: 40dvh;
+
+    }
+
+
+
+}
+
+/* -------------------------------------END---------------------------------- */
 
 @media only screen and (min-width: 576px) and (max-width: 768px) {
 
@@ -125,11 +192,7 @@
 
     .crs {
 
-        width: 720px;
-    }
-
-    .adjst {
-        height: 455px;
+        width: 685px;
     }
 
     .columns-courses {
@@ -143,11 +206,6 @@
         margin-bottom: 0px;
     }
 
-    .description-course {
-
-        margin: 10px 0px 0px 0px;
-        line-height: 1.4;
-    }
 
     .teck {
         font-size: 14px;
@@ -194,10 +252,7 @@
         margin: 0px;
     }
 
-    .school {
-        letter-spacing: 0px;
-        padding: 3px 10px;
-    }
+
 
     .title-course {
         font-size: 15px;
@@ -227,10 +282,10 @@
 
 @media only screen and (max-width: 768px) {
 
-    .font-size-courses{
+    .font-size-courses {
         font-size: 25px;
         font-weight: 700;
-        
+
     }
 
 
