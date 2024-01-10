@@ -128,6 +128,16 @@
 /* -------------------------------------------------------------------------- */
 /*                                Footer                                      */
 /* -------------------------------------------------------------------------- */
+
+.footer-page {
+    width: '100%';
+    scroll-snap-align: start;
+    scroll-snap-stop: always;
+    background-color: rgb(212, 57, 0);
+    color: white;
+
+}
+
 .footer-h {
     height: 100dvh;
 }
@@ -149,6 +159,12 @@
 
     margin: 0;
     padding: 2px 0px;
+}
+
+.ul-footer {
+    list-style: 'none';
+    padding: '0';
+    margin: '0';
 }
 
 /* ---------------------------------End---------------------------------------*/
