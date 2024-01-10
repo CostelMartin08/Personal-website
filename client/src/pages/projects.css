@@ -1,11 +1,15 @@
 .project-page {
     width: 100%;
     scroll-snap-align: start;
+    scroll-snap-stop: always;
 }
 
 .grd-section1 {
     z-index: 50;
     height: 80dvh;
+    animation: slideDown linear forwards;
+    animation-timeline: view();
+    scale: .8;
 
 }
 

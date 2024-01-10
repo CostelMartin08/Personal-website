@@ -16,3 +16,28 @@
 ::-webkit-scrollbar {
     display: none;
 }
+
+@keyframes slideDown {
+
+
+
+    to {
+        scale: 1;
+
+
+
+    }
+}
+
+
+@keyframes firstComponent {
+
+
+
+    to {
+        scale: 0.6;
+        opacity: 1;
+
+
+    }
+}

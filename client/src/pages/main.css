@@ -4,11 +4,17 @@
 
 .first-page {
     scroll-snap-align: start;
+    scroll-snap-stop: always;
 
 }
 
 .first-page-h {
     height: 100dvh;
+    animation: firstComponent linear forwards;
+    animation-timeline: view();
+    animation-range: exit;
+    scale: 1;
+  
 }
 
 .clr-section1 {
@@ -103,10 +109,16 @@
 
 .about-page {
     scroll-snap-align: start;
+    scroll-snap-stop: always;
+
 }
 
 .about-page-h {
     height: 100dvh;
+    animation: slideDown linear forwards;
+    animation-timeline: view();
+    scale: .7;
+   
 }
 
 .about-font {
@@ -117,8 +129,13 @@
 
 }
 
+
+
 .btn-warning {
-    font-size: medium;
+
+    width: 100px;
+    height: 40px;
+    font-size: 15px;
     font-weight: 600;
     --bs-btn-color: #000;
     --bs-btn-bg: orange;
@@ -168,12 +185,16 @@
 /* -------------------------------------------------------------------------- */
 
 .contact-page {
-
+    scroll-snap-stop: always;
     scroll-snap-align: start;
 }
 
 .contact-pg-h {
     height: 100dvh;
+    animation: slideDown linear forwards;
+    animation-timeline: view();
+    animation-range: entry-crossing exit-crossing;
+    scale: .8;
 }
 
 .form-heading {
@@ -196,14 +217,10 @@
     margin-top: 0.25rem;
 }
 
-.btn-warning {
-    height: 50px;
-    width: 100%;
-}
 
 .contact-pad {
     width: 100%;
- 
+
 }
 
 .succes {
@@ -356,7 +373,7 @@
     }
 
     .btn-warning {
-        width: 200px;
+        width: 100px;
     }
 
     .page-not-found {
@@ -367,10 +384,11 @@
         font-size: 16px;
 
     }
+
     .contact-pad {
         margin-top: 10dvh;
     }
-    
+
 
 }
 

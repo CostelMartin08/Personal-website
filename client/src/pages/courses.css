@@ -2,12 +2,17 @@
 
     background-color: #0C3B2E;
     scroll-snap-align: start;
+    scroll-snap-stop: always;
     width: 100%;
 
 }
 
 .crs-pg {
     height: 100dvh;
+    animation: slideDown linear forwards;
+    animation-timeline: view();
+    animation-timeline: exit-smooth;
+    scale: .8;
 }
 
 .crsl-btn-md {

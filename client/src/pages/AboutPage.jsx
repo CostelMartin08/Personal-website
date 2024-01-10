@@ -36,7 +36,7 @@ const AboutPage = forwardRef((props, ref) => {
 
                         <a href="https://github.com/CostelMartin08/Personal-website/raw/main/client/src/assets/resume.pdf" download>
 
-                            <button type="button" className="btn btn-warning">Resume <i className="fa-solid fa-file-arrow-down"></i></button>
+                            <button type="button" className="btn btn-resume btn-warning">Resume <i className="fa-solid fa-file-arrow-down"></i></button>
                         </a>
                     </div>
                 </div>
