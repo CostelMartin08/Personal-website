@@ -117,7 +117,7 @@
     height: 100dvh;
     animation: slideDown linear forwards;
     animation-timeline: view();
-    scale: .7;
+    scale: .8;
    
 }
 
