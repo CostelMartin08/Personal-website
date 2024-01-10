@@ -5,7 +5,6 @@ import './nav.css';
 const style = {
 
     footer: {
-        height: '100%',
         width: '100%',
         scrollSnapAlign: 'start',
         backgroundColor: '#D43900',
