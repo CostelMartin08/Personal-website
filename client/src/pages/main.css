@@ -194,7 +194,7 @@
     animation: slideDown linear forwards;
     animation-timeline: view();
     animation-range: entry-crossing exit-crossing;
-    scale: .8;
+    scale: .8
 }
 
 .form-heading {
