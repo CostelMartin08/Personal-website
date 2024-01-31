@@ -63,11 +63,11 @@ const data = {
             visit: 'https://costelmartin08.github.io/Keeper-React-App/'
         },
         {
-            type: 'Social media',
-            name: 'Nature Gram',
-            description: "Nature Gram is designed to be a social media application where users can share photos of nature. It's a MERN application, but it's currently not functional and not live.",
-            code: 'https://github.com/CostelMartin08/NatureGram', 
-            visit: 'visitnatureGram.dev'
+            type: 'Tool',
+            name: 'Shortly URL',
+            description: "Shortly is an application designed to meet Frontend Mentor challenges, integrating an API for URL shortening, making it easier to manage and share links.",
+            code: 'https://github.com/CostelMartin08/url-shortening-api/tree/main', 
+            visit: 'https://costelmartin08.github.io/url-shortening-api/'
         }
     ]
 
