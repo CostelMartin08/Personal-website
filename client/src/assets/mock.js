@@ -56,11 +56,11 @@ const data = {
             visit: 'https://restaurantlapunte.ro'
         },
         {
-            type: 'Notes',
-            name: 'Keeper App',
-            description: 'Keeper App is a React application that I developed during a course to understand how React works. You can find it on my GitHub profile along with other similar small applications.',
-            code: 'https://github.com/CostelMartin08/Keeper-React-App',
-            visit: 'https://costelmartin08.github.io/Keeper-React-App/'
+            type: 'Online Shop',
+            name: 'Gadget Grid',
+            description: 'Gadget Grid is a web application built with Next.js, MongoDB, Auth.js, and Tailwind CSS. I ve aimed to capture the complexity of an online store, from product listing (in administrator mode) to order confirmation, account creation, password reset, and more.',
+            code: 'https://github.com/CostelMartin08/Next.js-store-project',
+            visit: 'https://gadgetgrid.ro/'
         },
         {
             type: 'Tool',
