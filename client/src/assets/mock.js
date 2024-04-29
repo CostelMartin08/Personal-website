@@ -53,7 +53,7 @@ const data = {
             name: 'Restaurant La Punte',
             description: "This application is one of the first ones I have created. Its purpose is to provide a simple way to view a restaurant's menu. By simply scanning a QR code, customers can easily access and view the menu.",
             code: 'https://github.com/CostelMartin08/restaurantlapunte.ro',
-            visit: 'https://restaurantlapunte.ro'
+            visit: 'https://restaurant-lapunte.ro'
         },
         {
             type: 'Online Shop',
