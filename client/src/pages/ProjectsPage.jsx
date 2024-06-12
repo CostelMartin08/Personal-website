@@ -52,12 +52,12 @@ const Projects = forwardRef((props, ref) => {
                         </div>
 
                         <button className="crsl-btn-md carousel-control-prev carousel-set-prevP" type="button" data-bs-target="#myProjectsCarousel" data-bs-slide="prev">
-                            <i class="d-none d-sm-block first-way fa-solid fa-chevron-left fa-lg"></i>
+                            <i className="d-none d-sm-block first-way fa-solid fa-chevron-left fa-lg"></i>
                             <span className="visually-hidden">Previous</span>
                         </button>
 
                         <button className="crsl-btn-md carousel-control-next carousel-set-nextP" type="button" data-bs-target="#myProjectsCarousel" data-bs-slide="next">
-                            <i class="d-none d-sm-block first-way fa-solid fa-chevron-right fa-lg"></i>
+                            <i className="d-none d-sm-block first-way fa-solid fa-chevron-right fa-lg"></i>
                             <span className="visually-hidden">Next</span>
                         </button>
 
@@ -104,12 +104,12 @@ const Projects = forwardRef((props, ref) => {
                         </div>
 
                         <button className="crsl-btn-md carousel-control-prev carousel-set-prevP" type="button" data-bs-target="#myProjectsCarousel-md" data-bs-slide="prev">
-                            <i class="first-way fa-solid fa-chevron-left fa-lg"></i>
+                            <i className="first-way fa-solid fa-chevron-left fa-lg"></i>
                             <span className="visually-hidden">Previous</span>
                         </button>
 
                         <button className="crsl-btn-md carousel-control-next carousel-set-nextP" type="button" data-bs-target="#myProjectsCarousel-md" data-bs-slide="next">
-                            <i class="first-way fa-solid fa-chevron-right fa-lg"></i>
+                            <i className="first-way fa-solid fa-chevron-right fa-lg"></i>
                             <span className="visually-hidden">Next</span>
                         </button>
 

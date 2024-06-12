@@ -14,7 +14,7 @@ const NotFound = () => {
                     <Link to='/' type='button' className='bg-transparent border-0 navbar-brand first-way font'>MC</Link>
 
                    <Link to='/'>
-                        <i class=" fa-not-found fa-solid fa-rotate-left"></i>
+                        <i className=" fa-not-found fa-solid fa-rotate-left"></i>
 
                  </Link>
 

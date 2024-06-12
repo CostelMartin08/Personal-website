@@ -77,7 +77,7 @@ const Contact = forwardRef((props, ref) => {
                         </div>
 
                         <div>
-                            <form on onSubmit={submitEvent}>
+                            <form onSubmit={submitEvent}>
                                 <div className="row m-0 main-font">
                                     <div className="input-section col-md-6  d-flex flex-column">
                                         <label className="mb-2">Your Name</label>
@@ -121,7 +121,7 @@ const Contact = forwardRef((props, ref) => {
 
                         <div className="d-flex justify-content-center flex-column align-items-center">
 
-                            <i class="succes fa-regular fa-circle-check"></i>
+                            <i className="succes fa-regular fa-circle-check"></i>
                             <p className="succes-text">The message was successfully sent!</p>
                             <button type="button" className="succes-btn btn btn-outline-success" onClick={() => setFunction()}>Ok</button>
 

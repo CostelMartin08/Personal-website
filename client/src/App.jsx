@@ -41,24 +41,30 @@ function App() {
 
         <FirstPage
           ref={componentRefs[0]}
+          data-page-name="first"
         />
 
         <AboutPage
           ref={componentRefs[1]}
+          data-page-name="about"
         />
         <Courses
           ref={componentRefs[2]}
+          data-page-name="courses"
         />
         <Projects
           ref={componentRefs[3]}
+          data-page-name="projects"
         />
         <Contact
           ref={componentRefs[4]}
+          data-page-name="contact"
         />
         <Footer
           componentRefs={componentRefs}
           currentIndex={currentIndex}
           ref={componentRefs[5]}
+          data-page-name="footer"
         />
 
       </main>

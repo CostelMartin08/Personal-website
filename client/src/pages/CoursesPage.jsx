@@ -72,7 +72,7 @@ const Courses = forwardRef((props, ref) => {
                     <div className="carousel slide" id="myCarousel-md" data-bs-ride="carousel">
 
                         <div className="carousel-indicators">
-                            <button type="button" data-bs-target="#myCarousel-md" data-bs-slide-to="0" class="active" aria-label="Slide 1" aria-current="true"></button>
+                            <button type="button" data-bs-target="#myCarousel-md" data-bs-slide-to="0" className="active" aria-label="Slide 1" aria-current="true"></button>
                             <button type="button" data-bs-target="#myCarousel-md" data-bs-slide-to="1" aria-label="Slide 2" className=""></button>
                         </div>
 
