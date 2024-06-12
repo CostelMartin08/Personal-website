@@ -1,50 +1,25 @@
 import { useEffect } from "react";
+import { logPageView } from '../analytics.js';
 
-function IntersectionObserverComponent({ componentRefs, setCurrentIndex }) {
-
-  /*const [currentIndex, setCurrentindex] = useState(null);
-  const [history, setHistory] = useState([]);
-*/
-
+const IntersectionObserverComponent = ({ componentRefs, setCurrentIndex }) => {
   useEffect(() => {
-
     const options = {
       root: null,
       rootMargin: "0px",
       threshold: 0.5
     };
 
-
-
     const callback = (entries) => {
-
       entries.forEach((entry) => {
-
         if (entry.isIntersecting) {
-
-          const index = entry.target.id;
-
-          /*       setHistory(prevHistory => [...prevHistory, index]);
-       
-                 entry.target.classList.add('animated-class');
-       
-                 const prevElement = document.getElementById(history[history.length - 2]);
-       
-                 if (prevElement) {
-                   prevElement.classList.remove('animated-class');
-                 } */
-
-          if (index !== -1) {
-            setCurrentIndex(parseInt(index));
-
+          const index = entry.target.getAttribute('data-page-name');
+          if (index) {
+            setCurrentIndex(parseInt(entry.target.id));
+            logPageView(index); 
           }
         }
-
-      })
-
-    }
-
-
+      });
+    };
 
     const observer = new IntersectionObserver(callback, options);
 
@@ -60,6 +35,6 @@ function IntersectionObserverComponent({ componentRefs, setCurrentIndex }) {
   }, [componentRefs, setCurrentIndex]);
 
   return null;
-}
+};
 
 export default IntersectionObserverComponent;

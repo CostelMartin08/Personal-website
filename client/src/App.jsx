@@ -1,4 +1,4 @@
-import React, { useRef, useState } from "react";
+import React, { useRef, useState, useEffect } from "react";
 import IntersectionObserverComponent from "./components/IntersectionObserverComponent";
 import "./app.css";
 
@@ -10,8 +10,7 @@ import Courses from "./pages/CoursesPage";
 import Projects from "./pages/ProjectsPage";
 import Contact from "./pages/ContactPage";
 import Footer from "./components/Footer";
-
-
+import { initGA } from './analytics.js';
 
 function App() {
 
@@ -27,6 +26,9 @@ function App() {
     useRef(null),
   ];
 
+  useEffect(() => {
+    initGA();
+  }, []);
 
   return (
     <>
