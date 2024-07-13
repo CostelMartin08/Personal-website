@@ -14,51 +14,23 @@
     animation-timeline: view();
     animation-range: exit;
     scale: 1;
-  
-}
-
-.clr-section1 {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    background-color: #F2F2F2;
-    height: 52%;
-}
-
-
-.section1-content {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    padding-top: 80px;
 
 }
 
-.section1-content p {
+.title {
     color: #0C3B2E;
-    font-size: 12.5px;
-    text-align: left;
-    padding-top: 5px;
-    margin: 0%;
-    width: 200px;
 }
 
-.font-size {
-    font-size: 40px;
-    font-weight: 700;
+.left-side {
+
+    background-color: #F2F2F2;
+
 }
 
-.font-size-f {
-    font-size: 40px;
-    font-weight: 700;
-}
-
-.clr-section2 {
+.right-side {
     position: relative;
     background-color: #0C3B2E;
-    height: 48%;
+
 }
 
 .framework-brd {
@@ -91,13 +63,8 @@
     width: 100%;
 }
 
-.svg-form {
-    position: absolute;
-    overflow: hidden;
-    height: 240px;
-    width: 350px;
 
-}
+
 
 /* ----------------------------------End---------------------------------------- */
 
@@ -118,7 +85,7 @@
     animation: slideDown linear forwards;
     animation-timeline: view();
     scale: .8;
-   
+
 }
 
 .about-font {
@@ -267,7 +234,7 @@
 
 @media only screen and (min-width: 576px) and (max-width: 768px) {
 
-    .clr-section1 {
+    .first {
         height: 100vh;
     }
 
@@ -280,7 +247,7 @@
         width: 170px;
     }
 
-    .clr-section2 {
+    .second-section {
         padding-bottom: 0px;
         height: 100vh;
     }
@@ -316,7 +283,7 @@
 
 @media only screen and (min-width: 768px) {
 
-    .clr-section1 {
+    .first {
         height: 100vh;
     }
 
@@ -324,7 +291,7 @@
         padding-top: 0px;
     }
 
-    .clr-section2 {
+    .second-section {
         height: 100%;
         padding-bottom: 0px;
     }

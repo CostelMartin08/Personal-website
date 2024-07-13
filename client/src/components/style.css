@@ -1,0 +1,17 @@
+.svg-form {
+    position: absolute;
+    overflow: hidden;
+    width: 350px;
+    height: 280px;
+}
+
+
+@media only screen and (min-width: 1024px) {
+
+
+    .svg-form {
+        width: 400px;
+        height: 400px;
+    }
+
+}

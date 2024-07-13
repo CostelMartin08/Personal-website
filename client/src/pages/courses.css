@@ -1,5 +1,8 @@
 .courses-page {
-
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
     background-color: #0C3B2E;
     scroll-snap-align: start;
     scroll-snap-stop: always;
@@ -8,34 +11,11 @@
 }
 
 .crs-pg {
-    height: 100dvh;
     animation: slideDown linear forwards;
     animation-timeline: view();
     animation-timeline: exit-smooth;
     scale: .8;
 }
-
-.crsl-btn-md {
-
-    z-index: 0;
-}
-
-.carousel-indicators {
-
-    bottom: -6dvh;
-}
-
-.carousel-inner {
-
-    padding-bottom: 5px;
-    width: 340px;
-}
-
-.font-size-courses {
-    font-weight: 700;
-    font-size: 25px;
-}
-
 
 /* -------------------------------------------------------------------------- */
 /*                                    Card                                    */
@@ -45,7 +25,6 @@
 .card-border-courses {
 
     position: relative;
-    max-width: 330px;
     border-radius: 20px;
     padding-left: 20px;
     padding-right: 20px;

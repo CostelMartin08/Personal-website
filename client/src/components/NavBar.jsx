@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react";
 import './nav.css';
+import Button from "./MCButton";
 
 
 const NavBar = (props) => {
@@ -34,6 +35,14 @@ const NavBar = (props) => {
         };
     }, []);
 
+    useEffect(() => {
+
+        if (isChecked || windowWidth > 768) {
+
+            setIsChecked(false);
+        }
+    }, [windowWidth])
+
 
 
     let style;
@@ -43,7 +52,7 @@ const NavBar = (props) => {
     let bgColorDrop = "bg-last-way"
     switch (index) {
         case 0:
-            style = windowWidth < 576 ? 'bg-first-way' : 'bg-second-way';
+            style = windowWidth < 768 ? 'bg-first-way' : 'bg-second-way';
             styleNav = 'bg-last-way';
             color = 'second-way';
             break;
@@ -66,34 +75,38 @@ const NavBar = (props) => {
 
     return (
 
-        <nav className="navbar w-100">
+        <section className="container mx-auto px-4 py-3 fixed left-0 right-0 z-10">
 
-            <div className="container-fluid px-md-5 py-2 position-relative">
 
-                <button className={`bg-transparent border-0 navbar-brand ${props.currentIndex === 2 || props.currentIndex === 5 ? 'second-way' : 'first-way'} font`} onClick={() => scrollToComponent(0)}>MC</button>
+            <div className="relative flex justify-between">
 
-                <div className="d-md-flex d-none menu-ul">
-                    {
-                        [1, 2, 3, 4].map((index) => (
-                            <ul key={index} onClick={() => scrollToComponent(index)}>
-                                <li className={color}>
+                <Button indx={index} />
+
+                <div className="hidden md:flex menu-ul">
+                    <ul className="flex items-center gap-10">
+                        {
+                            [1, 2, 3, 4].map((index) => (
+                                <li className={color} key={index} onClick={() => scrollToComponent(index)}>
+
                                     {text[index]}
+
                                 </li>
-                            </ul>
-                        ))
-                    }
+                            ))
+                        }
+                    </ul>
 
                 </div>
 
-                <button className="bg-transparent border-0 d-md-none" type='button'>
+                <button className="bg-transparent border-0  md:hidden" type='button'>
 
                     <label className="burger" htmlFor="burger">
+
                         <input
                             type="checkbox"
                             id="burger"
                             checked={isChecked}
                             onChange={handleCheckboxChange}
-                            className="size-settings"
+
                         />
                         <span className={style}></span>
                         <span className={style}></span>
@@ -104,7 +117,7 @@ const NavBar = (props) => {
 
                 <div className="set-collapse" id="navbars">
                     <div
-                        className={`${styleNav} dropdown-menu position-static gap-2 p-4 rounded-3 mx-0 shadow w-220px`}
+                        className={`${styleNav} dropdown-menu static gap-2 p-4 rounded-md mx-0 shadow`}
                         style={{ display: isChecked ? 'grid' : 'none' }}>
 
                         {
@@ -131,8 +144,10 @@ const NavBar = (props) => {
 
                     </div>
                 </div>
+
             </div>
-        </nav>
+
+        </section>
 
     )
 }

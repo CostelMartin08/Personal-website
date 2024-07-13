@@ -6,7 +6,7 @@ const CoursesCard = (props) => {
 
     return (
 
-        <div className="card card-border-courses mx-auto">
+        <div style={{height: '75dvh'}} className="card w-[96%] xs:w-11/12 sm:w-8/12 md:w-11/12 lg:11/12 my-2  mx-auto card-border-courses">
 
             <div className="card-body-courses">
 
