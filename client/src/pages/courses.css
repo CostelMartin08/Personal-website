@@ -22,6 +22,10 @@
 /* -------------------------------------------------------------------------- */
 
 
+
+
+
+
 .card-border-courses {
 
     position: relative;
@@ -64,27 +68,7 @@
 }
 
 
-.title-card-courses {
-    margin: 0;
-    font-size: 15.5px;
-    font-weight: 700;
-    cursor: pointer;
-    transition: all 0.4s;
-}
 
-.title-card-courses p:last-child {
-    margin: 2px;
-
-}
-
-.title-card-courses .title-course {
-    margin: 0;
-    font-size: 15px;
-    font-weight: 900;
-    border-bottom: 1px solid black;
-    margin-bottom: 6px;
-    transition: all 0.4s;
-}
 
 .content-card-courses {
     text-align: start;
@@ -101,16 +85,9 @@
     font-weight: 900;
 }
 
-.teck {
-    font-size: 14px;
-    font-weight: 500;
-    margin-top: 10px;
-}
-
 .teck ul {
-    font-size: medium;
     margin-left: 15px;
-    list-style: square;
+    list-style:outside;
     line-height: 1.9;
 }
 

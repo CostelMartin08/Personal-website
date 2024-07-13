@@ -21,7 +21,7 @@ const Courses = forwardRef((props, ref) => {
 
         <section className="courses-page " id='2' ref={ref}>
 
-            <div className="crs-pg space-y-4 container">
+            <div className="crs-pg space-y-4 container relaative">
 
                 <div className="text-white">
 

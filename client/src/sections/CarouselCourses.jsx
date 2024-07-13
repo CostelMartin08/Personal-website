@@ -18,6 +18,8 @@ const Carousel = () => {
         speed: 500,
         slidesToShow: 4,
         slidesToScroll: 4,
+      
+    
         responsive: [
             {
                 breakpoint: 1280,
@@ -50,6 +52,7 @@ const Carousel = () => {
                         date={course.date}
                         description={course.description}
                         teckStack={course.teckStack}
+                        logo={course.logo}
                     />
                 </div>
             ))}
