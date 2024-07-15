@@ -31,7 +31,7 @@ const FirstPage = forwardRef((props, ref) => {
 
                         <h1 className="title sm:text-center md:text-left font-bold text-[40px] sm:text-5xl md:text-4xl lg:text-5xl xl:text-6xl">
 
-                            Junior  Frontend <br /> <spam>Developer.</spam>
+                            Junior Frontend <br /> <spam>Developer.</spam>
 
                         </h1>
 

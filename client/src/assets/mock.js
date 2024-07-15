@@ -1,6 +1,6 @@
-import Udemy from '../../public/icon/logo/udemy.webp';
-import ITSchool from '../../public/icon/logo/itschool.webp';
-import Mosh from '../../public/icon/logo/mosh.webp';
+import Udemy from '/icon/logo/udemy.webp';
+import ITSchool from '/icon/logo/itschool.webp';
+import Mosh from '/icon/logo/mosh.webp';
 
 
 const data = {

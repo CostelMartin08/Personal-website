@@ -18,8 +18,8 @@ const Carousel = () => {
         speed: 500,
         slidesToShow: 4,
         slidesToScroll: 4,
-      
-    
+
+
         responsive: [
             {
                 breakpoint: 1280,
@@ -45,7 +45,9 @@ const Carousel = () => {
         <Slider {...settings}>
 
             {courseData.map((course, index) => (
-                <div className='py-10 px-2' key={index}>
+
+                <div className='py-3 px-2 sm:px-0' key={index}>
+
                     <CoursesCard
                         school={course.school}
                         course={course.titleCourse}
@@ -54,7 +56,9 @@ const Carousel = () => {
                         teckStack={course.teckStack}
                         logo={course.logo}
                     />
+
                 </div>
+
             ))}
 
         </Slider>

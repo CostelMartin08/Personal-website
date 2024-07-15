@@ -20,9 +20,9 @@ const AboutPage = forwardRef((props, ref) => {
                     </svg>
                 </div>
 
-                <div className="mt-4 main-font space-y-8">
+                <div className="mt-4 main-font space-y-8 ">
 
-                    <h3 className="font-bold text-4xl sm:text-5xl md:text-6xl first-way mb-3 ">About me</h3>
+                    <h3 className="font-bold text-3xl sm:text-5xl md:text-6xl first-way mb-3 ">About me</h3>
 
                     <p className="indent-2 font-light text-xl md:text-3xl lg:text-4xl tracking-wide">
                         Ready for a new step in my career, I am in search of a job opportunity.
