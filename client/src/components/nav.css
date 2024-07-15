@@ -166,7 +166,7 @@
 
 @media only screen and (min-width: 576px) {
 
-    .absolute {
+    .class-absolute {
         display: block;
         position: absolute;
         top: 81.5dvh;
@@ -189,7 +189,7 @@
 
 @media only screen and (min-width: 992px) {
 
-    .absolute {
+    .class-absolute {
         display: block;
         position: absolute;
         top: 82vh;

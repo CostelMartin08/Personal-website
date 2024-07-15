@@ -45,7 +45,7 @@ const Carousel = () => {
         <Slider {...settings}>
 
             {courseData.map((course, index) => (
-                <div key={index}>
+                <div className='py-10 px-2' key={index}>
                     <CoursesCard
                         school={course.school}
                         course={course.titleCourse}

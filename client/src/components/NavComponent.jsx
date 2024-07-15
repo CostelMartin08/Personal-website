@@ -32,7 +32,7 @@ const Nav = (props) => {
             :
 
             <ul
-                className="absolute"
+                className="class-absolute"
                 style={style.ul}>
                 {
                     [0, 1, 2, 3, 4].map((index) => (
