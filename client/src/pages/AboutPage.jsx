@@ -5,7 +5,7 @@ const AboutPage = forwardRef((props, ref) => {
 
     return (
 
-        <section className="about-page " id='1' ref={ref}>
+        <section name='About Page' data-page-name="/about" className="about-page " id='1' ref={ref}>
 
             <div className="container mx-auto relative about-page-h w-4/5 flex flex-col justify-center p-0">
 

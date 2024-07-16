@@ -19,7 +19,7 @@ const FirstPage = forwardRef((props, ref) => {
 
     return (
 
-        <section className="first-page" id='0' ref={ref} >
+        <section name='Home Page' data-page-name="/home" className="first-page" id='0' ref={ref} >
 
             <div className="first-page-h flex md:flex-row flex-col">
 

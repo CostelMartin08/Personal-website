@@ -11,6 +11,7 @@ import Projects from "./pages/ProjectsPage";
 import Contact from "./pages/ContactPage";
 import Footer from "./components/Footer";
 import { initGA } from './analytics.js';
+import { CookiesMessage } from "./components/CookiesMessage.jsx";
 
 function App() {
 
@@ -26,9 +27,11 @@ function App() {
     useRef(null),
   ];
 
+  {/*
   useEffect(() => {
     initGA();
   }, []);
+*/}
 
   return (
     <>
@@ -37,7 +40,9 @@ function App() {
         componentRefs={componentRefs}
       />
 
-      <main id="page" >
+      <main className="relative" id="page" >
+
+        <CookiesMessage />
 
         <FirstPage
           ref={componentRefs[0]}
@@ -66,7 +71,6 @@ function App() {
           ref={componentRefs[5]}
           data-page-name="footer"
         />
-
       </main>
 
       <Nav

@@ -16,7 +16,7 @@ const Projects = forwardRef((props, ref) => {
 
     return (
 
-        <section className="project-page" id='3' ref={ref}>
+        <section name='Projects Page' data-page-name="/projects" className="project-page" id='3' ref={ref}>
 
             <div className="d-grid justify-content-center align-content-center container grd-section1 padding ">
 

@@ -23,7 +23,7 @@ const Footer = forwardRef((props, ref) => {
 
 
     return (
-        <footer className="footer-page" id='5' ref={ref}>
+        <footer name='Footer' data-page-name="/footer" className="footer-page" id='5' ref={ref}>
 
             <div className="container d-flex flex-column align-items-center justify-content-center px-md-5 footer-h">
 

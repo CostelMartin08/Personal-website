@@ -19,7 +19,7 @@ const Courses = forwardRef((props, ref) => {
 
     return (
 
-        <section className="courses-page " id='2' ref={ref}>
+        <section name='Courses Page' data-page-name="/courses" className="courses-page " id='2' ref={ref}>
 
             <div className="crs-pg space-y-1 container relative">
 

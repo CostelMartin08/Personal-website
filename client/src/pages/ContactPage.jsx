@@ -63,7 +63,7 @@ const Contact = forwardRef((props, ref) => {
     }
  
     return (
-        <section className="contact-page" id='4' ref={ref}>
+        <section name='Contact Page' data-page-name="/contact" className="contact-page" id='4' ref={ref}>
 
             <div className="container contact-pg-h d-flex flex-column justify-content-center align-items-center">
 
