@@ -74,7 +74,7 @@ const Check = () => {
 
     return (
         <>
-            <i class="text-xl fa-solid fa-circle-check px-1 text-[#0C3B2E]"></i>
+            <i className="text-xl fa-solid fa-circle-check px-1 text-[#0C3B2E]"></i>
         </>
     )
 }

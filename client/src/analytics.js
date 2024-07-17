@@ -20,6 +20,7 @@ export const logPageView = (page, title) => {
 };
 
 export function deleteAnalyticsCookies() {
+
   const cookies = document.cookie.split(";");
 
   cookies.forEach(cookie => {
@@ -29,7 +30,7 @@ export function deleteAnalyticsCookies() {
 
     if (trimmedName.startsWith('_ga') || trimmedName.startsWith('_gid') || trimmedName.startsWith('_gat')) {
 
-      document.cookie = `${trimmedName}=;expires=Thu, 01 Jan 1970 00:00:00 GMT;path=/`;
+      document.cookie = `${trimmedName}=;expires=Thu, 01 Jan 1970 00:00:00 GMT;path=/;domain=martinescuconstantin.com`;
     }
   });
 }

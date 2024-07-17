@@ -7,14 +7,14 @@ export const CookiesMessage = () => {
 
   useEffect(() => {
     const consent = document.cookie.split('; ').find(row => row.startsWith('cookieConsent='));
-    
+
     if (!consent) {
       setTimeout(() => {
 
-     setShowBanner(true);
+        setShowBanner(true);
 
       }, 5000);
-      
+
       deleteAnalyticsCookies();
     } else {
       initializeGA();
