@@ -21,23 +21,20 @@ const Projects = forwardRef((props, ref) => {
 
             <section className="prj-pg">
 
-                <div className="container flex flex-col justify-center items-center h-dvh">
+                <div className="container mx-auto flex flex-col justify-center items-center h-dvh">
 
-                    <h3 className="text-2xl md:text-4xl font-bold mb-4">Projects</h3>
+                    <h3 className="text-4xl md:text-5xl md:py-3 lato-black">Projects</h3>
 
-                    <div className="w-full  xl:w-3/4">
+                    <div className="w-full xl:w-11/12 2xl:w-3/4">
 
                         <CarouselProject />
 
-
                     </div>
-
-
-
 
                 </div>
 
             </section>
+
         </section >
     )
 })

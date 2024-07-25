@@ -38,7 +38,12 @@ const Nav = (props) => {
                     [0, 1, 2, 3, 4].map((index) => (
                         <li key={index} onClick={() => scrollToComponent(index)}>
                             <button
-                                className={props.currentIndex === 0 || props.currentIndex === 2 || props.currentIndex === 3 ? 'second-way' : 'first-way'}
+                            className={
+                                (props.currentIndex === 0 || props.currentIndex === 2 || props.currentIndex === 3) ? 
+                                'text-white' : 
+                                'text-color-principal'
+                              }
+                              
                                 style={style.button}>
                                 {props.currentIndex === index ? (
                                     <i className="fa-solid fa-square fa-xs"></i>

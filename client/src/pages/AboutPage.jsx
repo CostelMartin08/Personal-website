@@ -5,7 +5,7 @@ const AboutPage = forwardRef((props, ref) => {
 
     return (
 
-        <section name='About Page' data-page-name="/about" className="about-page " id='1' ref={ref}>
+        <section name='About Page' data-page-name="/about" className="about-page" id='1' ref={ref}>
 
             <div className="container mx-auto relative about-page-h w-4/5 flex flex-col justify-center p-0">
 
@@ -20,11 +20,11 @@ const AboutPage = forwardRef((props, ref) => {
                     </svg>
                 </div>
 
-                <div className="mt-4 main-font space-y-8 ">
+                <div className="mt-4 space-y-8 ">
 
-                    <h3 className="font-bold text-3xl sm:text-5xl md:text-6xl first-way mb-3 ">About me</h3>
+                    <h3 className="lato-bold text-3xl sm:text-5xl md:text-5xl text-color-principal mb-3 ">About me</h3>
 
-                    <p className="indent-2 font-light text-xl md:text-3xl lg:text-4xl tracking-wide">
+                    <p className="indent-2 text-xl md:text-3xl lg:text-4xl tracking-wide">
                         Ready for a new step in my career, I am in search of a job opportunity.
                         My passion for technology and the desire to stay up-to-date with innovations
                         have led me to the field of web technologies. At the moment, my focus is on
@@ -35,7 +35,7 @@ const AboutPage = forwardRef((props, ref) => {
 
                         <a href="https://github.com/CostelMartin08/Personal-website/raw/main/client/src/assets/resume.pdf" download>
 
-                            <button type="button" className="bg-teal-950 text-white p-3 font-black px-4 rounded-xl">Resume <i className="fa-solid fa-file-arrow-down"></i></button>
+                            <button type="button" className="bg-teal-950 text-white p-3 lato-black px-4 rounded-xl">Resume <i className="fa-solid px-2 fa-file-arrow-down"></i></button>
                         </a>
                     </div>
                 </div>

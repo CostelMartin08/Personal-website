@@ -53,9 +53,9 @@ export const CookiesMessage = () => {
 
         <Cookies />
 
-        <p className='font-black text-xl'>We use cookies</p>
+        <p className='lato-bold text-xl'>We use cookies</p>
 
-        <p className='font-light text-center'>This website uses cookies to ensure you get the best experience on our site.</p>
+        <p className='lato-light text-center'>This website uses cookies to ensure you get the best experience on our site.</p>
 
         <div className='flex gap-5'>
           <button onClick={handleAcceptCookies} className='px-4 py-2 bg-indigo-900 text-white rounded-xl'>Allow</button>

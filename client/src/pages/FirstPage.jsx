@@ -23,29 +23,29 @@ const FirstPage = forwardRef((props, ref) => {
 
             <div className="first-page-h flex md:flex-row flex-col">
 
-                <div className="left-side h-3/6 md:h-full w-full md:w-1/3 flex flex-col justify-center items-center">
+                <div className="left-side h-3/6 w-full md:h-full md:w-2/5 flex flex-col justify-center items-center">
 
-                    <div className="h-1/6"></div>
+                    <div className="w-3/4 flex flex-col justify-center items-center space-y-4">
 
-                    <div className="flex flex-col justify-center items-center px-14 space-y-4">
+                        <h1 className="lato-black  text-5xl lg:text-7xl xl:text-8xl">
 
-                        <h1 className="title sm:text-center md:text-left font-bold text-[40px] sm:text-5xl md:text-4xl lg:text-5xl xl:text-6xl">
-
-                            Junior Frontend <br /> <span>Developer.</span>
+                            Junior Frontend <br /><span>Developer.</span>
 
                         </h1>
 
-                        <p className="text-base font-extralight">I enjoy developing utility-focused frontend products while also providing a pleasant user experience.</p>
+                        <p className="text-lg lato-light">I enjoy developing utility-focused frontend products while also providing a pleasant user experience.</p>
                     </div>
 
                 </div>
 
-                <div className="right-side relative h-3/6 md:h-full w-full md:w-2/3">
+                <div className="right-side relative h-3/6 md:h-full w-full md:w-3/5">
 
                     <div className="img-box">
                         <img
                             className="photo"
-                            style={style.photo} src={photo}
+                            alt='Martinescu Constantin'
+                            style={style.photo}
+                            src={photo}
                         >
                         </img>
                         <span

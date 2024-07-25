@@ -61,74 +61,87 @@ const Contact = forwardRef((props, ref) => {
     function setFunction() {
         setSuccesMessage(false);
     }
- 
+
     return (
         <section name='Contact Page' data-page-name="/contact" className="contact-page" id='4' ref={ref}>
 
-            <div className="container contact-pg-h d-flex flex-column justify-content-center align-items-center">
+            <div className="container mx-auto contact-pg-h flex flex-col justify-center items-center">
 
                 {!succesMessage ?
 
-                    <div className="container-fluid contact-pad d-flex flex-column justify-content-center position-relative">
+                    <div className=" space-y-8">
 
-                        <div className="text-center px-md-5 mb-sm-4 main-font">
-                            <h4 className="form-heading main-font font-size">Send a message!</h4>
-                            <p className="form-text">Whether you want to ask me something or just say hello, you can do it.</p>
+                        <div className="text-center space-y-2">
+                            <h4 className="lato-bold-italic text-4xl md:text-5xl">Send a message!</h4>
+                            <p className="lato-light text-xl">Whether you want to ask me something or just say hello, you can do it.</p>
                         </div>
 
-                        <div>
-                            <form onSubmit={submitEvent}>
-                                <div className="row m-0 main-font">
-                                    <div className="input-section col-md-6  d-flex flex-column">
-                                        <label className="mb-2">Your Name</label>
-                                        <input
-                                            onChange={handleChange}
-                                            name='nume'
-                                            value={formData.nume}
-                                            type='text'
-                                            className="input-frm py-sm-3"
-                                        ></input>
-                                    </div>
-                                    <div className="input-section col-md-6  d-flex flex-column">
-                                        <label className="mb-2">Email adress</label>
-                                        <input
-                                            onChange={handleChange}
-                                            name='email'
-                                            value={formData.email}
-                                            type='text'
-                                            className="input-frm py-sm-3" ></input>
-                                    </div>
-                                    <div className="input-section col-12 pt-2">
-                                        <label className="mb-2">Your Message</label>
-                                        <textarea
-                                            onChange={handleChange}
-                                            name='subiect'
-                                            value={formData.subiect}
-                                            className="input-frm pb-sm-5 w-100"></textarea>
-                                    </div>
 
-                                    <div className="text-center mt-4">
-                                        <button type="submit" className="btn btn-warning">Send <i className="fa-solid fa-arrow-right"></i></button>
-                                    </div>
+                        <form
+                            onSubmit={submitEvent}
+                            className="flex flex-col items-center gap-5 font-semibold text-lg">
+
+                            <section className="flex flex-col md:flex-row w-full gap-4">
+
+                                <div className="md:w-1/2 flex flex-col">
+                                    <label className="">Your Name</label>
+                                    <input
+                                        onChange={handleChange}
+                                        name='nume'
+                                        value={formData.nume}
+                                        type='text'
+                                        className="bg-transparent border-2 border-gray-600 p-3 rounded-lg md:rounded-t-lg"
+                                    ></input>
                                 </div>
 
-                            </form>
-                        </div>
+                                <div className="md:w-1/2 flex flex-col">
+                                    <label className="">Email adress</label>
+                                    <input
+                                        onChange={handleChange}
+                                        name='email'
+                                        value={formData.email}
+                                        type='text'
+                                        className="bg-transparent border-2 border-gray-600 p-3 rounded-lg md:rounded-t-lg"
+                                    ></input>
+
+                                </div>
+
+                            </section>
+
+                            <div className="flex flex-col w-full ">
+                                <label className="">Your Message</label>
+                                <textarea
+                                    onChange={handleChange}
+                                    name='subiect'
+                                    value={formData.subiect}
+                                    className="bg-transparent border-2 border-gray-600 h-48 rounded-lg md:rounded-b-lg"></textarea>
+                            </div>
+
+                            <div className="bg-green-700 p-3 px-12 text-white rounded-lg">
+                                <button type="submit" className="lato-bold text-lg">Send <i className="fa-solid px-2 fa-arrow-right"></i></button>
+                            </div>
+
+
+                        </form>
 
                     </div>
+
                     :
+
                     <div>
 
-                        <div className="d-flex justify-content-center flex-column align-items-center">
+                        <div className="flex justify-center flex-col items-center space-y-8">
 
-                            <i className="succes fa-regular fa-circle-check"></i>
-                            <p className="succes-text">The message was successfully sent!</p>
-                            <button type="button" className="succes-btn btn btn-outline-success" onClick={() => setFunction()}>Ok</button>
+                            <i className="text-8xl text-green-700 fa-regular fa-circle-check"></i>
+                            <p className="lato-light text-4xl text-center">The message was successfully sent!</p>
+
+                            <button type="button" className=" border-2 border-green-700 p-2 px-8 rounded-lg lato-bold text-lg" onClick={() => setFunction()}>Ok</button>
 
                         </div>
 
                     </div>
                 }
+
             </div>
 
         </section>

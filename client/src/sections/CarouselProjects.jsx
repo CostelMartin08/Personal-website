@@ -3,7 +3,7 @@ import ProjectsCard from "../components/ProjectsCard";
 import data from "../assets/mock";
 
 
-import { Navigation, Pagination } from 'swiper/modules';
+import { Pagination } from 'swiper/modules';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { EffectCreative } from 'swiper/modules';
 
@@ -36,7 +36,7 @@ const CarouselProject = () => {
             
         >
             {projectsData.map((project, index) => (
-                <SwiperSlide className='pb-5 p-3 sm:p-4 md:px-2' key={index}>
+                <SwiperSlide className='p-5 sm:p-4 md:px-2' key={index}>
                     <ProjectsCard
                         type={project.type}
                         name={project.name}

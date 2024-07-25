@@ -18,7 +18,7 @@
 }
 
 .swiper-pagination-bullet {
-   
+  
     background-color: #F2F2F2 !important;
     width: 12px !important;
     height: 12px !important;
@@ -31,7 +31,7 @@
 /* -------------------------------------------------------------------------- */
 
 .card-border-projects {
-
+background-color:#F2F2F2;
     position: relative;
     border-radius: 20px;
     padding-left: 20px;

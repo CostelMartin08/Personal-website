@@ -7,11 +7,11 @@ const ProjectsCard = (props) => {
 
     return (
 
-        <div className="show-more-effect bg-white card-border-projects overflow-hidden relative py-4 my-2 mx-auto">
+        <div className="show-more-effect card-border-projects overflow-hidden relative py-4 mb-8 mx-auto">
 
-            <div className="card-section lg:p-3 transition ease-in-out row">
+            <div className="card-section flex flex-col md:flex-row lg:p-6 transition ease-in-out gap-3">
 
-                <div className="md:w-1/2 flex flex-col items-start justify-around gap-4">
+                <div className="md:w-2/3 flex flex-col justify-around">
 
                     <section className="w-full flex flex-col items-center md:items-start md:flex-row gap-2">
 
@@ -28,13 +28,13 @@ const ProjectsCard = (props) => {
 
 
                         <div className="flex flex-col items-center md:items-start space-y-2">
-                            <p className="font-black text-xl xl:text-2xl line-clamp-1">{props.name}</p>
-                            <p className="font-extralight text-lg text-zinc-400">{props.type}</p>
+                            <p className="lato-black text-xl xl:text-2xl line-clamp-1">{props.name}</p>
+                            <p className="lato-light text-lg text-zinc-400">{props.type}</p>
                         </div>
 
                     </section>
 
-                    <p className="text-lg line-clamp-3 sm:line-clamp-4 md:line-clamp-none">
+                    <p className="text-lg my-2 line-clamp-3 sm:line-clamp-4 md:line-clamp-none md:text-xl">
                         {props.description}
                     </p>
 
@@ -45,7 +45,7 @@ const ProjectsCard = (props) => {
 
                 </div>
 
-                <div className="flex md:w-1/2">
+                <div className="md:w-1/3">
 
                     <img
                         className="w-full h-[240px] md:h-[400px] rounded-md object-cover object-top"
@@ -62,12 +62,12 @@ const ProjectsCard = (props) => {
             <div className="show-more flex flex-col justify-around rounded-xl space-y-4 p-4">
 
                 <div className="space-y-3">
-                    <h1 className="font-black text-2xl">{props.name}</h1>
+                    <h1 className="lato-black text-3xl">{props.name}</h1>
 
-                    <a href={props.visit} className="text-lg font-light underline">{props.visit}</a>
+                    <a href={props.visit} className="text-lg lato-light-italic underline">{props.visit}</a>
                 </div>
 
-                <p className="text-base font-light"> {props.description}
+                <p className="text-base"> {props.description}
 
                 </p>
 

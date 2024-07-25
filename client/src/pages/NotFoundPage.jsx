@@ -11,7 +11,7 @@ const NotFound = () => {
 
                 <div className="container-fluid px-md-4 py-md-4 position-relative">
 
-                    <Link to='/' type='button' className='bg-transparent border-0 navbar-brand first-way font'>MC</Link>
+                    <Link to='/' type='button' className='bg-transparent border-0 navbar-brand text-color-principal'>MC</Link>
 
                    <Link to='/'>
                         <i className=" fa-not-found fa-solid fa-rotate-left"></i>
@@ -33,7 +33,7 @@ const NotFound = () => {
                     </svg>
                 </div>
 
-                <div className="vh-100 main-font d-flex justify-content-center align-items-center flex-column">
+                <div className="vh-100 d-flex justify-content-center align-items-center flex-column">
                     <h1 className="not-found ">404</h1>
                     <p className="not-found-p">This website has only one page (for now).</p>
                 </div>

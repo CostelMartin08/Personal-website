@@ -1,56 +1,49 @@
-import React, { useState } from "react";
+import React from "react";
 import CoursesCard from "../components/CoursesCard";
 import data from "../assets/mock";
-import Slider from "react-slick";
 
-import "slick-carousel/slick/slick.css";
-import "slick-carousel/slick/slick-theme.css";
+
+import { Pagination } from 'swiper/modules';
+import { Swiper, SwiperSlide } from 'swiper/react';
+
+
+import 'swiper/css';
+import 'swiper/css/pagination';
 
 
 const Carousel = () => {
 
     const courseData = data.courseData;
 
-    const settings = {
-        arrows: false,
-        dots: true,
-        infinite: true,
-        speed: 500,
-        slidesToShow: 4,
-        slidesToScroll: 4,
-        customPaging: (i) => (
-
-            <div>
-                <i className="text-white text-[10px] fa-solid fa-circle"></i>
-            </div>
-        ),
-        responsive: [
-            {
-                breakpoint: 1280,
-                settings: {
-                    slidesToShow: 2,
-                    slidesToScroll: 2,
-                    infinite: true,
-                    dots: true
-                }
-            },
-            {
-                breakpoint: 768,
-                settings: {
-                    slidesToShow: 1,
-                    slidesToScroll: 1
-                }
-            }
-        ]
-    };
-
     return (
 
-        <Slider {...settings}>
+        <Swiper
+            modules={[Pagination]}
+            spaceBetween={0}
+            slidesPerView={1}
+            pagination={{ clickable: true }}
+            breakpoints={{
+
+                768: {
+                    slidesPerView: 2,
+                    spaceBetween: 20,
+                },
+
+                1280: {
+                    slidesPerView: 3,
+                    spaceBetween: 10,
+                },
+                1536: {
+                    slidesPerView: 4,
+                    spaceBetween: 0,
+                },
+
+            }}
+        >
 
             {courseData.map((course, index) => (
 
-                <div className='py-3 px-2 sm:px-0' key={index}>
+                <SwiperSlide className='pb-12 pt-3 px-4' key={index}>
 
                     <CoursesCard
                         school={course.school}
@@ -61,11 +54,11 @@ const Carousel = () => {
                         logo={course.logo}
                     />
 
-                </div>
+                </SwiperSlide>
 
             ))}
 
-        </Slider>
+        </Swiper>
 
     )
 }
