@@ -1,27 +1,69 @@
-.first-way {
-    color: #0C3B2E !important;
+.lato-light {
+    font-family: "Lato", sans-serif;
+    font-weight: 300;
+    font-style: normal;
 }
 
-.second-way {
-    color: #F2F2F2;
+.lato-regular {
+    font-family: "Lato", sans-serif;
+    font-weight: 400;
+    font-style: normal;
 }
 
-.bg-first-way {
-    background-color: #0C3B2E !important;
+.lato-bold {
+    font-family: "Lato", sans-serif;
+    font-weight: 700;
+    font-style: normal;
 }
 
-.bg-second-way {
-    background-color: #F2F2F2;
+.lato-black {
+    font-family: "Lato", sans-serif;
+    font-weight: 900;
+    font-style: normal;
 }
 
-.bg-last-way {
+.lato-light-italic {
+    font-family: "Lato", sans-serif;
+    font-weight: 300;
+    font-style: italic;
+}
+
+.lato-bold-italic {
+    font-family: "Lato", sans-serif;
+    font-weight: 700;
+    font-style: italic;
+  }
+
+.text-color-principal {
+    color: #0C3B2E;
+}
+
+.text-white {
+    color: white;
+}
+.text-dark{
+    color: #2c2c2c;
+}
+
+.bg-color-principal {
+    background-color: #0C3B2E;
+}
+
+.bg-light {
+    background-color: #f2f2f2;
+}
+
+.bg-color-secondary {
     background-color: #D43900;
 }
 
-.main-font {
-    font-family: 'Open Sans', sans-serif;
-    font-weight: 600;
-}
+
+/* -------------------------------------------------------------------------- */
+/*                                 ce conteaza                                */
+/* -------------------------------------------------------------------------- */
+
+
+
 
 .position {
     display: flex;
