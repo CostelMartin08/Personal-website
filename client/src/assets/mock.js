@@ -1,7 +1,16 @@
 import Udemy from '/icon/logo/udemy.webp';
 import ITSchool from '/icon/logo/itschool.webp';
 import Mosh from '/icon/logo/mosh.webp';
-
+import Project from '/icon/logo/project.webp';
+import GadgetGridImg from '/icon/logo/gadgetgrid.webp';
+import GadgetGrid from '/icon/logo/gadgetgridLogo.webp';
+import PortfolioImg from '/icon/logo/nunta.webp';
+import LaPunte from '/icon/logo/lapunte.webp';
+import LaPunteImg from '/icon/logo/lapunteImg.webp';
+import TipMarketing from '/icon/logo/tipmarketingLogo.webp';
+import TipMarketingImg from '/icon/logo/tipMarketing.webp';
+import Shoortly from '/icon/logo/shortly.webp';
+import ShortlyImg from '/icon/logo/shortlyImg.webp';
 
 const data = {
 
@@ -54,7 +63,9 @@ const data = {
             name: 'Photographer portfolio',
             description: "This is my first web application created according to the client's preferences. It's a MERN application that allows the administrator to manage the content on the page.",
             code: 'https://github.com/CostelMartin08/server-photoApp',
-            visit: 'https://balanandrei.ro'
+            visit: 'https://balanandrei.ro',
+            logo: Project,
+            image: PortfolioImg
 
         },
         {
@@ -62,21 +73,38 @@ const data = {
             name: 'Restaurant La Punte',
             description: "This application is one of the first ones I have created. Its purpose is to provide a simple way to view a restaurant's menu. By simply scanning a QR code, customers can easily access and view the menu.",
             code: 'https://github.com/CostelMartin08/restaurantlapunte.ro',
-            visit: 'https://restaurant-lapunte.ro'
+            visit: 'https://restaurant-lapunte.ro',
+            logo: LaPunte,
+            image: LaPunteImg
         },
         {
             type: 'Online Shop',
             name: 'Gadget Grid',
             description: 'Gadget Grid is a web application built with Next.js, MongoDB, Auth.js, and Tailwind CSS. I ve aimed to capture the complexity of an online store, from product listing (in administrator mode) to order confirmation, account creation, password reset, and more.',
             code: 'https://github.com/CostelMartin08/Next.js-store-project',
-            visit: 'https://gadgetgrid.ro/'
+            visit: 'https://gadgetgrid.ro/',
+            logo: GadgetGrid,
+            image: GadgetGridImg
+        },
+        {
+            type: 'Presentation site',
+            name: 'TIP Marketing',
+            description: "Shortly is an application designed to meet Frontend Mentor challenges, integrating an API for URL shortening, making it easier to manage and share links.",
+            code: 'https://github.com/CostelMartin08/tip-marketing',
+            visit: 'https://tipmarketing.ro/',
+            logo: TipMarketing,
+            image: TipMarketingImg
+
         },
         {
             type: 'Tool',
             name: 'Shortly URL',
             description: "Shortly is an application designed to meet Frontend Mentor challenges, integrating an API for URL shortening, making it easier to manage and share links.",
             code: 'https://github.com/CostelMartin08/url-shortening-api/tree/main',
-            visit: 'https://costelmartin08.github.io/url-shortening-api/'
+            visit: 'https://costelmartin08.github.io/url-shortening-api/',
+            logo: Shoortly,
+            image: ShortlyImg
+
         }
     ]
 

@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import CoursesCard from "../components/CoursesCard";
 import data from "../assets/mock";
 import Slider from "react-slick";
@@ -18,8 +18,12 @@ const Carousel = () => {
         speed: 500,
         slidesToShow: 4,
         slidesToScroll: 4,
+        customPaging: (i) => (
 
-
+            <div>
+                <i className="text-white text-[10px] fa-solid fa-circle"></i>
+            </div>
+        ),
         responsive: [
             {
                 breakpoint: 1280,

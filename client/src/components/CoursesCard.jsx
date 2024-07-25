@@ -4,22 +4,11 @@ const CoursesCard = (props) => {
 
     const teckStack = props.teckStack;
 
-    const [isHover, setIsHovered] = useState(false);
-
-    const handleMouseEnter = () => {
-        setIsHovered(true);
-    };
-
-    const handleMouseLeave = () => {
-        setIsHovered(false);
-    };
-
     return (
 
         <div
-            onMouseEnter={handleMouseEnter}
-            onMouseLeave={handleMouseLeave}
-            className="card overflow-hidden relative py-3 w-[96%] xs:w-11/12 sm:w-8/12 md:w-11/12 lg:11/12 my-2 mx-auto card-border-courses">
+          
+            className="card card-border-courses overflow-hidden relative py-3 w-[96%] xs:w-11/12 sm:w-8/12 md:w-11/12  my-2 mx-auto ">
 
             <div className="card-section transition ease-in-out  card-body-courses">
 
@@ -51,9 +40,6 @@ const CoursesCard = (props) => {
                     </div>
 
                 </div>
-
-
-
 
             </div>
 
