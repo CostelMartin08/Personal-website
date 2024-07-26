@@ -71,11 +71,10 @@ const Contact = forwardRef((props, ref) => {
 
                     <div className=" space-y-8">
 
-                        <div className="text-center space-y-2">
+                        <div className="text-center space-y-3">
                             <h4 className="lato-bold-italic text-4xl md:text-5xl">Send a message!</h4>
                             <p className="lato-light text-xl">Whether you want to ask me something or just say hello, you can do it.</p>
                         </div>
-
 
                         <form
                             onSubmit={submitEvent}
@@ -90,7 +89,7 @@ const Contact = forwardRef((props, ref) => {
                                         name='nume'
                                         value={formData.nume}
                                         type='text'
-                                        className="bg-transparent border-2 border-gray-600 p-3 rounded-lg md:rounded-t-lg"
+                                        className="bg-transparent border-2 border-gray-600 p-3 rounded-lg"
                                     ></input>
                                 </div>
 
@@ -101,7 +100,7 @@ const Contact = forwardRef((props, ref) => {
                                         name='email'
                                         value={formData.email}
                                         type='text'
-                                        className="bg-transparent border-2 border-gray-600 p-3 rounded-lg md:rounded-t-lg"
+                                        className="bg-transparent border-2 border-gray-600 p-3 rounded-lg "
                                     ></input>
 
                                 </div>
@@ -114,7 +113,7 @@ const Contact = forwardRef((props, ref) => {
                                     onChange={handleChange}
                                     name='subiect'
                                     value={formData.subiect}
-                                    className="bg-transparent border-2 border-gray-600 h-48 rounded-lg md:rounded-b-lg"></textarea>
+                                    className="bg-transparent border-2 border-gray-600 h-48 rounded-lg"></textarea>
                             </div>
 
                             <div className="bg-green-700 p-3 px-12 text-white rounded-lg">

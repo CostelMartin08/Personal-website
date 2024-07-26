@@ -25,15 +25,19 @@ const FirstPage = forwardRef((props, ref) => {
 
                 <div className="left-side h-3/6 w-full md:h-full md:w-2/5 flex flex-col justify-center items-center">
 
-                    <div className="w-3/4 flex flex-col justify-center items-center space-y-4">
+                    <div className="w-3/4 flex flex-col justify-center items-center text-center md:text-left md:items-start space-y-4">
 
-                        <h1 className="lato-black  text-5xl lg:text-7xl xl:text-8xl">
+                        <h1 className="lato-black text-4xl lg:text-5xl">
 
-                            Junior Frontend <br /><span>Developer.</span>
+                            Junior Frontend <br/><span>Developer.</span>
 
                         </h1>
 
-                        <p className="text-lg lato-light">I enjoy developing utility-focused frontend products while also providing a pleasant user experience.</p>
+                        <p className="text-lg lato-light">
+                            I enjoy developing utility-focused frontend products
+                            while also providing a pleasant user experience.
+                        </p>
+
                     </div>
 
                 </div>
