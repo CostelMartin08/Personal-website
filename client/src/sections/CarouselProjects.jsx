@@ -36,7 +36,7 @@ const CarouselProject = () => {
             
         >
             {projectsData.map((project, index) => (
-                <SwiperSlide className='p-5 sm:p-4 md:px-2' key={index}>
+                <SwiperSlide className='p-5' key={index}>
                     <ProjectsCard
                         type={project.type}
                         name={project.name}

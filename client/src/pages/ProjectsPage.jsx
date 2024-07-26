@@ -25,7 +25,7 @@ const Projects = forwardRef((props, ref) => {
 
                     <h3 className="text-4xl md:text-5xl md:py-3 lato-black">Projects</h3>
 
-                    <div className="w-full xl:w-11/12 2xl:w-3/4">
+                    <div className="w-full xs:w-11/12 xl:w-11/12 2xl:w-3/4">
 
                         <CarouselProject />
 

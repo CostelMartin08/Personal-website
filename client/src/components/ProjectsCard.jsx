@@ -7,11 +7,11 @@ const ProjectsCard = (props) => {
 
     return (
 
-        <div className="show-more-effect card-border-projects overflow-hidden relative py-4 mb-8 mx-auto">
+        <div className="show-more-effect card-border-projects overflow-hidden relative py-4 mb-8">
 
-            <div className="card-section flex flex-col md:flex-row lg:p-6 transition ease-in-out gap-3">
+            <div className="card-section flex flex-col md:flex-row p-2 lg:p-4 transition ease-in-out gap-4">
 
-                <div className="md:w-2/3 flex flex-col justify-around">
+                <div className="md:w-3/6 flex flex-col justify-around">
 
                     <section className="w-full flex flex-col items-center md:items-start md:flex-row gap-2">
 
@@ -19,7 +19,7 @@ const ProjectsCard = (props) => {
                             {` 
                         ${props.logo === '/icon/logo/shortly.webp' ? 'border-2 border-black' : null}
                         ${props.logo === '/icon/logo/tipmarketingLogo.webp' ? 'border-2 border-black' : null}
-                        flex  rounded-md size-20
+                        flex  rounded-md size-14 md:size-20
                         `}>
 
                             <img className="object-cover rounded-md" src={props.logo} alt='logo-app' />
@@ -34,21 +34,21 @@ const ProjectsCard = (props) => {
 
                     </section>
 
-                    <p className="text-lg my-2 line-clamp-3 sm:line-clamp-4 md:line-clamp-none md:text-xl">
+                    <p className="text-lg py-2 line-clamp-3 sm:line-clamp-4 md:line-clamp-none md:text-xl">
                         {props.description}
                     </p>
 
-                    <div className="hidden md:flex  justify-start gap-5">
+                    <div className="hidden md:flex justify-start gap-5">
                         <Button text='Visit now' bg='bg-[#0C3B2E]' />
                         <Button text='Code' bg='bg-[#3e3e3e]' />
                     </div>
 
                 </div>
 
-                <div className="md:w-1/3">
+                <div className="md:w-3/6">
 
                     <img
-                        className="w-full h-[240px] md:h-[400px] rounded-md object-cover object-top"
+                        className="w-full h-[250px] md:h-[400px] rounded-md object-cover object-top"
 
                         src={props.image} alt='image-description'
                     />
@@ -59,7 +59,7 @@ const ProjectsCard = (props) => {
 
             </div>
 
-            <div className="show-more flex flex-col justify-around rounded-xl space-y-4 p-4">
+            <div className="show-more flex flex-col justify-around rounded-xl space-y-4 p-3">
 
                 <div className="space-y-3">
                     <h1 className="lato-black text-3xl">{props.name}</h1>
@@ -67,7 +67,7 @@ const ProjectsCard = (props) => {
                     <a href={props.visit} className="text-lg lato-light-italic underline">{props.visit}</a>
                 </div>
 
-                <p className="text-base"> {props.description}
+                <p className="text-lg"> {props.description}
 
                 </p>
 
