@@ -25,7 +25,7 @@ const Nav = (props) => {
     };
 
     return (
-        <> {props.currentIndex === 5 ?
+        <> {props.currentIndex === 6 ?
 
             null
 
@@ -35,7 +35,7 @@ const Nav = (props) => {
                 className="class-absolute"
                 style={style.ul}>
                 {
-                    [0, 1, 2, 3, 4].map((index) => (
+                    [0, 1, 2, 3, 4, 5].map((index) => (
                         <li key={index} onClick={() => scrollToComponent(index)}>
                             <button
                             className={

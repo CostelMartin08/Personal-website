@@ -10,7 +10,7 @@ import Courses from "./pages/CoursesPage";
 import Projects from "./pages/ProjectsPage";
 import Contact from "./pages/ContactPage";
 import Footer from "./components/Footer";
-
+import Technology from "./pages/Technology.jsx";
 import { CookiesMessage } from "./components/CookiesMessage.jsx";
 
 function App() {
@@ -19,6 +19,7 @@ function App() {
 
 
   const componentRefs = [
+    useRef(null),
     useRef(null),
     useRef(null),
     useRef(null),
@@ -59,14 +60,18 @@ function App() {
           ref={componentRefs[3]}
           data-page-name="projects"
         />
-        <Contact
+        <Technology
           ref={componentRefs[4]}
+          data-page-name="technology"
+        />
+        <Contact
+          ref={componentRefs[5]}
           data-page-name="contact"
         />
         <Footer
           componentRefs={componentRefs}
           currentIndex={currentIndex}
-          ref={componentRefs[5]}
+          ref={componentRefs[6]}
           data-page-name="footer"
         />
       </main>
