@@ -17,3 +17,25 @@
     }
 
 }
+
+.special-font {
+    font-family: 'Dancing Script', cursive;
+
+}
+
+/* -------------------------------------------------------------------------- */
+/*                                   Footer                                   */
+/* -------------------------------------------------------------------------- */
+
+.footer-page {
+    width: '100%';
+    scroll-snap-align: end;
+    scroll-snap-stop: always;
+    background-color: rgb(212, 57, 0);
+    color: white;
+
+}
+
+.footer-h {
+    height: 100dvh;
+}

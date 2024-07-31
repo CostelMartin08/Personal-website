@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import './nav.css';
+
 import Button from "./MCButton";
 
 
@@ -9,7 +9,7 @@ const NavBar = (props) => {
     const [isChecked, setIsChecked] = useState(false);
 
     let index = props.currentIndex;
-    let text = ['0', 'About Me', 'Courses', 'My Project', 'Contact'];
+    let text = ['0', 'About Me', 'Courses', 'My Project', 'Power Skills', 'Contact'];
 
     const scrollToComponent = (index) => {
 
@@ -20,7 +20,6 @@ const NavBar = (props) => {
     const handleCheckboxChange = (event) => {
         setIsChecked(event.target.checked);
     };
-
 
     useEffect(() => {
 
@@ -44,7 +43,6 @@ const NavBar = (props) => {
     }, [windowWidth])
 
 
-
     let style;
     let styleNav;
     let color = 'text-color-principal';
@@ -61,7 +59,7 @@ const NavBar = (props) => {
             styleNav = 'bg-color-secondary';
             color = 'text-white';
             break;
-        case 5:
+        case 6:
             style = 'bg-white';
             styleNav = "bg-color-principal";
             color = 'text-white';
@@ -101,13 +99,13 @@ const NavBar = (props) => {
                 </label>
 
 
-                <div className='w-max absolute  top-12 right-0' id="navbars">
+                <div className='w-80 absolute top-12 right-0' id="navbars">
                     <div
-                        className={`${bgColorDrop} dropdown-menu static gap-2 p-4 rounded-md mx-0 shadow`}
+                        className={`${bgColorDrop} p-5 gap-4 rounded-md`}
                         style={{ display: isChecked ? 'grid' : 'none' }}>
 
                         {
-                            [1, 2, 3, 4].map((index) => (
+                            [1, 2, 3, 4, 5].map((index) => (
                                 <ul className="list lato-bold" key={index} onClick={() => scrollToComponent(index)}>
                                     <li className='my-auto'>
                                         <button className="btn-style">
@@ -120,7 +118,7 @@ const NavBar = (props) => {
 
                         <hr className={`${colorDrop} line-nav`} />
 
-                        <ul className="social-list">
+                        <ul className="flex">
 
                             <li><a href='https://www.linkedin.com/in/constantin-martinescu-b5a58526b/' className="text-white pe-2"><i className={`${colorDrop} fa-brands fa-linkedin fa-2xl`}></i></a></li>
                             <li><a href='https://github.com/CostelMartin08?tab=repositories' className="text-white px-2"><i className={`${colorDrop} fa-brands fa-square-github fa-2xl`}></i></a></li>

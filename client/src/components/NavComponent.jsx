@@ -1,22 +1,4 @@
 import React from "react";
-import './nav.css';
-
-const style = {
-
-    ul: {
-
-        listStyleType: 'none',
-        padding: '0',
-        margin: '0',
-
-    },
-
-    button: {
-        border: '0',
-        backgroundColor: 'transparent',
-        padding: '0'
-    }
-}
 
 const Nav = (props) => {
 
@@ -32,19 +14,19 @@ const Nav = (props) => {
             :
 
             <ul
-                className="class-absolute"
-                style={style.ul}>
+                className="hidden md:block z-10 absolute bottom-4 right-5"
+            >
                 {
                     [0, 1, 2, 3, 4, 5].map((index) => (
                         <li key={index} onClick={() => scrollToComponent(index)}>
                             <button
-                            className={
-                                (props.currentIndex === 0 || props.currentIndex === 2 || props.currentIndex === 3) ? 
-                                'text-white' : 
-                                'text-color-principal'
-                              }
-                              
-                                style={style.button}>
+                                className={
+                                    (props.currentIndex === 0 || props.currentIndex === 2 || props.currentIndex === 3) ?
+                                        'text-white' :
+                                        'text-color-principal'
+                                }
+                            >
+
                                 {props.currentIndex === index ? (
                                     <i className="fa-solid fa-square fa-xs"></i>
                                 ) : (

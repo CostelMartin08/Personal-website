@@ -1,8 +1,6 @@
 import React from "react";
 
 
-
-
 const Button = ({ indx }) => {
 
     return (
@@ -10,7 +8,7 @@ const Button = ({ indx }) => {
         <>
 
             <button
-                className={`${indx === 2 || indx === 5 ? 'text-white' : 'text-color-principal'} 
+                className={`${indx === 2 || indx === 6 ? 'text-white' : 'text-color-principal'} 
                  bg-transparent special-font font-black
                  text-xl sm:text-3xl lg:text-4xl`}
                 onClick={() => scrollToComponent(0)}>MC</button>

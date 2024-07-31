@@ -1,12 +1,8 @@
 import React, { forwardRef, useEffect, useState } from "react"
-import './nav.css';
-
-
+import './style.css';
 
 
 const Footer = forwardRef((props, ref) => {
-
-
 
     const [year, setYear] = useState(new Date().getFullYear());
 
