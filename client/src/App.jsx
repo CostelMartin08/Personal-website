@@ -13,6 +13,7 @@ import Footer from "./components/Footer";
 import Technology from "./pages/Technology.jsx";
 import { CookiesMessage } from "./components/CookiesMessage.jsx";
 
+
 function App() {
 
   const [currentIndex, setCurrentIndex] = useState(0);

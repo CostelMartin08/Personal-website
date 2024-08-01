@@ -14,7 +14,7 @@ const Nav = (props) => {
             :
 
             <ul
-                className="hidden md:block z-10 absolute bottom-4 right-5"
+                className="hidden md:block z-10 absolute bottom-4 right-10 lg:bottom-10 lg:right-18"
             >
                 {
                     [0, 1, 2, 3, 4, 5].map((index) => (

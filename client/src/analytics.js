@@ -2,7 +2,7 @@ import ReactGA from 'react-ga4';
 
 localStorage.setItem('access', false);
 
-let isGAInitialized = sessionStorage.getItem('access');
+let isGAInitialized = localStorage.getItem('access');
 
 export const initGA = () => {
   ReactGA.initialize('G-FCQ1T9WKGC');
@@ -10,14 +10,25 @@ export const initGA = () => {
 
 };
 
-export const logPageView = (page, title) => {
-
+console.log(isGAInitialized)
+export const logPageView = (pageName, sectionName) => {
   if (isGAInitialized) {
-
-    ReactGA.send({ hitType: 'pageview', page: page, title: title });
+    ReactGA.send({
+      hitType: "pageview",
+      page: pageName,
+      title: sectionName,
+    });
   }
-
 };
+
+export const logEventView = (action) => {
+  if (isGAInitialized) {
+    ReactGA.event({
+      category: "User Interaction",
+      action: action,
+    });
+  }
+}
 
 export function deleteAnalyticsCookies() {
 

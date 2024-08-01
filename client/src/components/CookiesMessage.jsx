@@ -6,9 +6,11 @@ export const CookiesMessage = () => {
   const [showBanner, setShowBanner] = useState(false);
 
   useEffect(() => {
+
     const consent = document.cookie.split('; ').find(row => row.startsWith('cookieConsent='));
 
     if (!consent) {
+      
       setTimeout(() => {
 
         setShowBanner(true);
