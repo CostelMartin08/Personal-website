@@ -29,7 +29,7 @@ const ProjectsCard = (props) => {
 
                         <div className="flex flex-col items-center md:items-start space-y-2">
                             <h3 className="lato-black text-xl xl:text-2xl line-clamp-1">{props.name}</h3>
-                            <p className="lato-light text-lg text-zinc-400">{props.type}</p>
+                            <p className="lato-light text-lg text-zinc-700">{props.type}</p>
                         </div>
 
                     </section>
