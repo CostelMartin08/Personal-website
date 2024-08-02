@@ -18,6 +18,7 @@ const Carousel = () => {
     return (
 
         <Swiper
+            lazy={true}
             modules={[Pagination]}
             spaceBetween={0}
             slidesPerView={1}

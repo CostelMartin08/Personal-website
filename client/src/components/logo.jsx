@@ -75,6 +75,7 @@ const SwiperComponent = ({ logos, delay }) => {
 
     return (
         <Swiper
+            lazy={true}
             effect="flip"
             autoplay={{
                 delay,

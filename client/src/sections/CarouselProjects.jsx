@@ -19,21 +19,22 @@ const CarouselProject = () => {
 
     return (
         <Swiper
+            lazy={true}
             grabCursor={true}
-            modules={[ Pagination,  EffectCreative]}
+            modules={[Pagination, EffectCreative]}
             slidesPerView={1}
-            pagination={{  clickable: true, dynamicMainBullets: 1 }}
+            pagination={{ clickable: true, dynamicMainBullets: 1 }}
             effect="creative"
             creativeEffect={{
                 prev: {
-                  
-                  translate: [0, 0, -400],
+
+                    translate: [0, 0, -400],
                 },
                 next: {
-                  translate: ['100%', 0, 0],
+                    translate: ['100%', 0, 0],
                 },
-              }}
-            
+            }}
+
         >
             {projectsData.map((project, index) => (
                 <SwiperSlide className='p-5' key={index}>
