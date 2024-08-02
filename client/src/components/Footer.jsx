@@ -51,7 +51,7 @@ const Footer = forwardRef((props, ref) => {
 
                     <div className="flex flex-col justify-end">
 
-                        <button name='navigate up' className="lato-black text-xl" onClick={() => scrollToComponent(0)}><i className="fa-solid fa-arrow-up fa-lg"></i></button>
+                        <button aria-label="navigate up" name='navigate up' className="lato-black text-xl" onClick={() => scrollToComponent(0)}><i className="fa-solid fa-arrow-up fa-lg"></i></button>
 
                     </div>
 
