@@ -47,6 +47,7 @@ const FirstPage = forwardRef((props, ref) => {
                     <div className="img-box">
                         <img
                             className="photo"
+                            loading="lazy"
                             alt='Martinescu Constantin'
                             style={style.photo}
                             src={photo}

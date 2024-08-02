@@ -15,7 +15,7 @@ const CoursesCard = (props) => {
                 <div className="flex items-center justify-center flex-col space-y-3">
 
                     <div className="rounded-full overflow-hidden size-16 md:size-28">
-                        <img className="object-cover" src={props.logo} alt='logo'></img>
+                        <img loading="lazy" className="object-cover" src={props.logo} alt='logo'></img>
                     </div>
 
                     <h3 className="lato-black text-xl text-center p-2 line-clamp-2">{props.course}</h3>

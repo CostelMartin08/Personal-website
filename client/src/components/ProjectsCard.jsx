@@ -34,14 +34,14 @@ const ProjectsCard = (props) => {
 
                     </section>
 
-                        <p className="text-lg md:py-2  line-clamp-3 sm:line-clamp-4 md:line-clamp-none lg:text-xl">
-                            {props.description}
-                        </p>
+                    <p className="text-lg md:py-2  line-clamp-3 sm:line-clamp-4 md:line-clamp-none lg:text-xl">
+                        {props.description}
+                    </p>
 
-                        <button 
+                    <button
                         name='click for more'
                         className="lato-light-italic md:hidden">click for more</button>
-                
+
                     <div className="hidden md:flex justify-start gap-5">
                         <Button name='visit site' text='Visit now' bg='bg-[#0C3B2E]' href={props.visit} />
                         <Button name='view code' text='Code' bg='bg-[#3e3e3e]' href={props.code} />
@@ -53,7 +53,7 @@ const ProjectsCard = (props) => {
 
                     <img
                         className="w-full h-[250px] md:h-[400px] rounded-md object-cover object-top"
-
+                        loading="lazy"
                         src={props.image} alt='image-description'
                     />
 
