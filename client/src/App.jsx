@@ -2,6 +2,8 @@ import React, { useRef, useState } from "react";
 import IntersectionObserverComponent from "./components/IntersectionObserverComponent";
 import "./app.css";
 
+import { CookiesMessage } from "./components/CookiesMessage.jsx";
+
 import NavBar from "./components/NavBar";
 import Nav from "./components/NavComponent";
 import FirstPage from "./pages/FirstPage";
@@ -11,13 +13,10 @@ import Projects from "./pages/ProjectsPage";
 import Contact from "./pages/ContactPage";
 import Footer from "./components/Footer";
 import Technology from "./pages/Technology.jsx";
-import { CookiesMessage } from "./components/CookiesMessage.jsx";
-
 
 function App() {
 
   const [currentIndex, setCurrentIndex] = useState(0);
-
 
   const componentRefs = [
     useRef(null),
@@ -28,8 +27,6 @@ function App() {
     useRef(null),
     useRef(null),
   ];
-
-
 
   return (
 
@@ -46,35 +43,29 @@ function App() {
 
         <FirstPage
           ref={componentRefs[0]}
-          data-page-name="first"
         />
 
         <AboutPage
           ref={componentRefs[1]}
-          data-page-name="about"
         />
         <Courses
           ref={componentRefs[2]}
-          data-page-name="courses"
         />
         <Projects
           ref={componentRefs[3]}
-          data-page-name="projects"
         />
         <Technology
           ref={componentRefs[4]}
-          data-page-name="technology"
         />
         <Contact
           ref={componentRefs[5]}
-          data-page-name="contact"
         />
         <Footer
           componentRefs={componentRefs}
           currentIndex={currentIndex}
           ref={componentRefs[6]}
-          data-page-name="footer"
         />
+
       </main>
 
       <Nav

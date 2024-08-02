@@ -7,7 +7,7 @@ const CoursesCard = (props) => {
     return (
 
         <div
-          
+
             className="card card-border-courses overflow-hidden relative py-4 sm:w-8/12 md:w-full my-2 mx-auto">
 
             <div className="card-section transition ease-in-out card-body-courses space-x-1">
@@ -23,10 +23,12 @@ const CoursesCard = (props) => {
 
                 </div>
 
-                <div>
-                    <p className="my-2 line-clamp-3">
-                        {props.description}
-                    </p>
+                <p className="my-2 line-clamp-3">
+                    {props.description}
+                </p>
+
+                <div className="text-center">
+                    <button className="lato-light-italic">click for more</button>
                 </div>
 
                 <div className="space-y-3">

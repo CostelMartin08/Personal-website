@@ -20,6 +20,7 @@ const Contact = forwardRef((props, ref) => {
     };
 
     const submitEvent = (e) => {
+
         e.preventDefault();
 
         fetch(`https://balanandrei.ro/api/send-email-site`, {
@@ -88,6 +89,7 @@ const Contact = forwardRef((props, ref) => {
                                         onChange={handleChange}
                                         name='nume'
                                         value={formData.nume}
+                                        required
                                         type='text'
                                         className="bg-transparent border-2 border-gray-600 p-3 rounded-lg"
                                     ></input>
@@ -98,6 +100,7 @@ const Contact = forwardRef((props, ref) => {
                                     <input
                                         onChange={handleChange}
                                         name='email'
+                                        required
                                         value={formData.email}
                                         type='text'
                                         className="bg-transparent border-2 border-gray-600 p-3 rounded-lg "
@@ -112,14 +115,12 @@ const Contact = forwardRef((props, ref) => {
                                 <textarea
                                     onChange={handleChange}
                                     name='subiect'
+                                    required
                                     value={formData.subiect}
                                     className="bg-transparent border-2 border-gray-600 h-48 rounded-lg"></textarea>
                             </div>
 
-                            <div className="bg-green-700 p-3 px-12 text-white rounded-lg">
-                                <button type="submit" className="lato-bold text-lg">Send <i className="fa-solid px-2 fa-arrow-right"></i></button>
-                            </div>
-
+                            <button type="submit" className=" bg-green-700 rounded-lg p-3 px-5 text-white lato-bold text-lg">Send <i className="fa-solid px-2 fa-arrow-right"></i></button>
 
                         </form>
 

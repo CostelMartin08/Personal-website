@@ -1,32 +1,36 @@
 import ReactGA from 'react-ga4';
 
-localStorage.setItem('access', false);
-
-let isGAInitialized = localStorage.getItem('access');
-
-export const initGA = () => {
-  ReactGA.initialize('G-FCQ1T9WKGC');
-  localStorage.setItem('access', true);
-
+const areCookiesSet = () => {
+  const consentCookie = document.cookie.split('; ').find(row => row.startsWith('cookieConsent='));
+  return consentCookie && consentCookie.split('=')[1] === 'true';
 };
 
-console.log(isGAInitialized)
+export const initializeGA = () => {
+
+  ReactGA.initialize([
+    {
+      trackingId: "G-FCQ1T9WKGC",
+      gaOptions: { testMode: true }
+    }
+  ]);
+};
+
 export const logPageView = (pageName, sectionName) => {
-  if (isGAInitialized) {
-    ReactGA.send({
-      hitType: "pageview",
-      page: pageName,
-      title: sectionName,
-    });
+  if (areCookiesSet()) {
+  ReactGA.send({
+    hitType: "pageview",
+    page: pageName,
+    title: sectionName,
+  });
   }
 };
 
 export const logEventView = (action) => {
-  if (isGAInitialized) {
-    ReactGA.event({
-      category: "User Interaction",
-      action: action,
-    });
+  if (areCookiesSet()) {
+  ReactGA.event({
+    category: "User Interaction",
+    action: action,
+  });
   }
 }
 
@@ -39,9 +43,13 @@ export function deleteAnalyticsCookies() {
     const name = equalsPosition > -1 ? cookie.substr(0, equalsPosition) : cookie;
     const trimmedName = name.trim();
 
-    if (trimmedName.startsWith('_ga') || trimmedName.startsWith('_gid') || trimmedName.startsWith('_gat')) {
+    if (trimmedName.startsWith('_ga') || trimmedName.startsWith('_ga_') || trimmedName.startsWith('_gid') || trimmedName.startsWith('_gat')) {
 
+      document.cookie = `${trimmedName}=;expires=Thu, 01 Jan 1970 00:00:00 GMT;path=/;`;
       document.cookie = `${trimmedName}=;expires=Thu, 01 Jan 1970 00:00:00 GMT;path=/;domain=martinescuconstantin.com`;
     }
+
+    ReactGA.ga('set', 'sendHitTask', null);
+
   });
 }

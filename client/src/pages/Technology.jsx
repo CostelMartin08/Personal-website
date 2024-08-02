@@ -1,11 +1,7 @@
 import React, { forwardRef } from "react";
 import { Logo } from "../components/logo";
 
-
-
 const Technology = forwardRef((props, ref) => {
-
-
 
     return (
 

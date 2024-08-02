@@ -17,9 +17,11 @@ import Git from '../logo/14.svg';
 import Prisma from '../logo/15.svg';
 import Mongoose from '../logo/16.svg';
 import GitHub from '../logo/17.svg';
+import DigitalOcean from '../logo/18.svg';
 
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Autoplay, EffectFlip } from 'swiper/modules';
+
 import 'swiper/css';
 import 'swiper/css/effect-flip';
 import './style.css';
@@ -46,6 +48,7 @@ const logos = {
     ],
     ts: [
         { src: Ts, alt: 'TypeScript' },
+        { src: DigitalOcean, alt: 'DigitalOcean' },
     ],
     pack: [
         { src: Webpack, alt: 'Webpack' },

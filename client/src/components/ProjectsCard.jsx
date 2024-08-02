@@ -34,13 +34,15 @@ const ProjectsCard = (props) => {
 
                     </section>
 
-                    <p className="text-lg py-2 line-clamp-3 sm:line-clamp-4 md:line-clamp-none md:text-xl">
-                        {props.description}
-                    </p>
+                        <p className="text-lg md:py-2  line-clamp-3 sm:line-clamp-4 md:line-clamp-none lg:text-xl">
+                            {props.description}
+                        </p>
 
+                        <button className="lato-light-italic md:hidden">click for more</button>
+                
                     <div className="hidden md:flex justify-start gap-5">
-                        <Button text='Visit now' bg='bg-[#0C3B2E]' />
-                        <Button text='Code' bg='bg-[#3e3e3e]' />
+                        <Button text='Visit now' bg='bg-[#0C3B2E]' href={props.visit} />
+                        <Button text='Code' bg='bg-[#3e3e3e]' href={props.code} />
                     </div>
 
                 </div>

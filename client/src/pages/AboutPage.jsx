@@ -1,7 +1,6 @@
 import React, { forwardRef } from "react";
-import './main.css';
 import { logEventView } from "../analytics";
-
+import './main.css';
 
 const AboutPage = forwardRef((props, ref) => {
 
@@ -38,7 +37,7 @@ const AboutPage = forwardRef((props, ref) => {
                         <a href="https://github.com/CostelMartin08/Personal-website/raw/main/client/src/assets/resume.pdf" download>
 
                             <button onClick = {()=> logEventView('Download CV')} type="button" className="bg-teal-950 text-white p-3 lato-black px-4 rounded-xl">Resume <i className="fa-solid px-2 fa-file-arrow-down"></i></button>
-                        </a>=
+                        </a>
                     </div>
                 </div>
 

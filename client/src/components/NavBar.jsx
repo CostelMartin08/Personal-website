@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-
+import { logEventView } from "../analytics";
 import Button from "./MCButton";
 
 
@@ -86,6 +86,7 @@ const NavBar = (props) => {
                         type="checkbox"
                         id="burger"
                         checked={isChecked}
+                        onClick={()=> logEventView('Click Burger Button')}
                         onChange={handleCheckboxChange} />
                     <div
                         className={`rounded-2xl h-[3px] w-1/2 ${style} duration-500 peer-checked:rotate-[225deg] origin-right peer-checked:-translate-x-[12px] peer-checked:-translate-y-[1px]`}

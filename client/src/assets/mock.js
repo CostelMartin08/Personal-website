@@ -89,7 +89,7 @@ const data = {
         {
             type: 'Presentation site',
             name: 'TIP Marketing',
-            description: "Shortly is an application designed to meet Frontend Mentor challenges, integrating an API for URL shortening, making it easier to manage and share links.",
+            description: "TIP Marketing is an application built with the Next.js framework and is an ongoing project. To ensure a modern and efficient interface, I use TailwindCSS, a CSS framework. Additionally, I utilize TypeScript and Resend. Currently, the application is hosted on a DigitalOcean server.",
             code: 'https://github.com/CostelMartin08/tip-marketing',
             visit: 'https://tipmarketing.ro/',
             logo: TipMarketing,

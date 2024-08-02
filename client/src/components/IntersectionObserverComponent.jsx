@@ -21,9 +21,10 @@ function IntersectionObserverComponent({ componentRefs, setCurrentIndex }) {
 
           if (index !== -1) {
             setCurrentIndex(parseInt(index));
-
+            
             logPageView(
               entry.target.getAttribute('data-page-name'),
+              
               entry.target.getAttribute('name')
             );
           }
