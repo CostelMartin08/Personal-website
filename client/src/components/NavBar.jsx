@@ -86,7 +86,7 @@ const NavBar = (props) => {
                         type="checkbox"
                         id="burger"
                         checked={isChecked}
-                        onClick={()=> logEventView('Click Burger Button')}
+                        onClick={() => logEventView('Click Burger Button')}
                         onChange={handleCheckboxChange} />
                     <div
                         className={`rounded-2xl h-[3px] w-1/2 ${style} duration-500 peer-checked:rotate-[225deg] origin-right peer-checked:-translate-x-[12px] peer-checked:-translate-y-[1px]`}
@@ -109,9 +109,9 @@ const NavBar = (props) => {
                             [1, 2, 3, 4, 5].map((index) => (
                                 <ul className="list lato-bold" key={index} onClick={() => scrollToComponent(index)}>
                                     <li className='my-auto'>
-                                        <button 
-                                        name='scrollToComponent'
-                                        className="btn-style">
+                                        <button
+                                            name='scrollToComponent'
+                                            className="btn-style">
                                             <p className={`${colorDrop} a-btn-style m-0`}>{text[index]}</p>
                                         </button>
                                     </li>
@@ -123,10 +123,47 @@ const NavBar = (props) => {
 
                         <ul className="flex">
 
-                            <li><a name='linkedIn' href='https://www.linkedin.com/in/constantin-martinescu-b5a58526b/' className="text-white pe-2"><i className={`${colorDrop} fa-brands fa-linkedin fa-2xl`}></i></a></li>
-                            <li><a name='gitHub' href='https://github.com/CostelMartin08?tab=repositories' className="text-white px-2"><i className={`${colorDrop} fa-brands fa-square-github fa-2xl`}></i></a></li>
-                            <li><a name='twiter' href='https://twitter.com/MartinescuCost2' className="text-white px-2"><i className={`${colorDrop} fa-brands fa-square-x-twitter fa-2xl`}></i></a></li>
-                            <li><a name='instagram' href='https://www.instagram.com/costelmartinescu/' className="text-white ps-2"><i className={`${colorDrop} fa-brands fa-instagram fa-2xl`}></i></a></li>
+                            <li>
+                                <a
+                                    aria-label="LinkedIn Profile"
+                                    name='linkedIn'
+                                    href='https://www.linkedin.com/in/constantin-martinescu-b5a58526b/'
+                                    className="text-white pe-2">
+                                    <i className={`${colorDrop} fa-brands fa-linkedin fa-2xl`}></i>
+
+                                </a>
+                            </li>
+
+                            <li>
+                                <a
+                                    aria-label="GitHub Profile"
+                                    name='gitHub'
+                                    href='https://github.com/CostelMartin08?tab=repositories'
+                                    className="text-white px-2">
+                                    <i className={`${colorDrop} fa-brands fa-square-github fa-2xl`}></i>
+                                </a>
+                            </li>
+
+                            <li>
+                                <a
+                                    aria-label="Twiter Profile"
+                                    name='twiter'
+                                    href='https://twitter.com/MartinescuCost2'
+                                    className="text-white px-2">
+                                    <i className={`${colorDrop} fa-brands fa-square-x-twitter fa-2xl`}></i>
+                                </a>
+                            </li>
+
+                            <li>
+                                <a
+                                    aria-label="Instagram Profile"
+                                    name='instagram'
+                                    href='https://www.instagram.com/costelmartinescu/'
+                                    className="text-white ps-2">
+                                    <i className={`${colorDrop} fa-brands fa-instagram fa-2xl`}> </i>
+                                </a>
+                            </li>
+
                         </ul>
 
                     </div>

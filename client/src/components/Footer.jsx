@@ -68,10 +68,50 @@ const Footer = forwardRef((props, ref) => {
 
                     </div>
                     <div className="mt-3 mt-md-0">
-                        <a name='linkedIn' href='https://www.linkedin.com/in/constantin-martinescu-b5a58526b/' className="text-white pe-2"><i className="fa-brands fa-linkedin fa-2xl"></i></a>
-                        <a name='gitHub' href='https://github.com/CostelMartin08?tab=repositories' className="text-white px-2"><i className="fa-brands fa-square-github fa-2xl"></i></a>
-                        <a name='twiter' href='https://twitter.com/MartinescuCost2' className="text-white px-2"><i className="fa-brands fa-square-x-twitter fa-2xl"></i></a>
-                        <a name='instagram' href='https://www.instagram.com/costelmartinescu/' className="text-white ps-2"><i className="fa-brands fa-instagram fa-2xl"></i></a>
+                        <a
+                            name="linkedIn"
+                            href="https://www.linkedin.com/in/constantin-martinescu-b5a58526b/"
+                            className="text-white pe-2"
+                            aria-label="LinkedIn Profile"
+                        >
+                            <i
+                                aria-label="LinkedIn Profile"
+                                className="fa-brands fa-linkedin fa-2xl"></i>
+                        </a>
+
+                        <a
+                            name='gitHub'
+                            href='https://github.com/CostelMartin08?tab=repositories'
+                            className="text-white px-2"
+                            aria-label="GitHub Profile"
+                        >
+                            <i
+                                aria-label="GitHub Profile"
+                                className="fa-brands fa-square-github fa-2xl"></i>
+
+                        </a>
+                        <a
+                            name='twiter'
+                            href='https://twitter.com/MartinescuCost2'
+                            className="text-white px-2"
+                            aria-label="Twiter Profile"
+                        >
+                            <i
+                                aria-label="Twiter Profile"
+                                className="fa-brands fa-square-x-twitter fa-2xl"></i>
+                        </a>
+
+                        <a
+                            name='instagram'
+                            href='https://www.instagram.com/costelmartinescu/'
+                            className="text-white ps-2"
+                            aria-label="Instagram Profile"
+                        >
+                            <i
+                                aria-label="Instagram Profile"
+                                className="fa-brands fa-instagram fa-2xl"></i>
+                        </a>
+
                     </div>
                 </div>
 
