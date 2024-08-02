@@ -40,7 +40,7 @@ const Footer = forwardRef((props, ref) => {
                             [0, 1, 2, 3, 4].map((index) => (
                                 <div className="" key={index} onClick={() => scrollToComponent(index)}>
 
-                                    <button className=""> <p className="">{text[index]}</p></button>
+                                    <button name='scrollToComponent'> <p className="">{text[index]}</p></button>
 
                                 </div>
                             ))
@@ -51,7 +51,7 @@ const Footer = forwardRef((props, ref) => {
 
                     <div className="flex flex-col justify-end">
 
-                        <button className="lato-black text-xl" onClick={() => scrollToComponent(0)}><i className="fa-solid fa-arrow-up fa-lg"></i></button>
+                        <button name='scrollToComponent' className="lato-black text-xl" onClick={() => scrollToComponent(0)}><i className="fa-solid fa-arrow-up fa-lg"></i></button>
 
                     </div>
 

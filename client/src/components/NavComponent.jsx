@@ -20,6 +20,7 @@ const Nav = (props) => {
                     [0, 1, 2, 3, 4, 5].map((index) => (
                         <li key={index} onClick={() => scrollToComponent(index)}>
                             <button
+                            name='scrollToComponent'
                                 className={
                                     (props.currentIndex === 0 || props.currentIndex === 2 || props.currentIndex === 3) ?
                                         'text-white' :

@@ -38,11 +38,13 @@ const ProjectsCard = (props) => {
                             {props.description}
                         </p>
 
-                        <button className="lato-light-italic md:hidden">click for more</button>
+                        <button 
+                        name='click for more'
+                        className="lato-light-italic md:hidden">click for more</button>
                 
                     <div className="hidden md:flex justify-start gap-5">
-                        <Button text='Visit now' bg='bg-[#0C3B2E]' href={props.visit} />
-                        <Button text='Code' bg='bg-[#3e3e3e]' href={props.code} />
+                        <Button name='visit site' text='Visit now' bg='bg-[#0C3B2E]' href={props.visit} />
+                        <Button name='view code' text='Code' bg='bg-[#3e3e3e]' href={props.code} />
                     </div>
 
                 </div>
@@ -74,8 +76,8 @@ const ProjectsCard = (props) => {
                 </p>
 
                 <div className="flex justify-between">
-                    <Button text='Visit now' bg='bg-[#0C3B2E]' href={props.visit} />
-                    <Button text='Code' bg='bg-[#3e3e3e]' href={props.code} />
+                    <Button name='visit site' text='Visit now' bg='bg-[#0C3B2E]' href={props.visit} />
+                    <Button name='view code' text='Code' bg='bg-[#3e3e3e]' href={props.code} />
                 </div>
 
             </div>

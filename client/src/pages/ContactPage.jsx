@@ -8,9 +8,9 @@ const Contact = forwardRef((props, ref) => {
     const [succesMessage, setSuccesMessage] = useState(false);
     const [formData, setFormData] = useState({
 
-        nume: ' ',
+        name: ' ',
         email: '',
-        subiect: ''
+        subject: ''
 
     });
 
@@ -46,9 +46,9 @@ const Contact = forwardRef((props, ref) => {
     useEffect(() => {
 
         const initialFormData = {
-            nume: '',
+            name: '',
             email: '',
-            subiect: '',
+            subject: '',
 
         };
 
@@ -84,11 +84,12 @@ const Contact = forwardRef((props, ref) => {
                             <section className="flex flex-col md:flex-row w-full gap-4">
 
                                 <div className="md:w-1/2 flex flex-col">
-                                    <label className="">Your Name</label>
+                                    <label htmlFor="name">Your Name</label>
                                     <input
                                         onChange={handleChange}
-                                        name='nume'
-                                        value={formData.nume}
+                                        id='name'
+                                        name='name'
+                                        value={formData.name}
                                         required
                                         type='text'
                                         className="bg-transparent border-2 border-gray-600 p-3 rounded-lg"
@@ -96,10 +97,11 @@ const Contact = forwardRef((props, ref) => {
                                 </div>
 
                                 <div className="md:w-1/2 flex flex-col">
-                                    <label className="">Email adress</label>
+                                    <label htmlFor="email">Email adress</label>
                                     <input
                                         onChange={handleChange}
                                         name='email'
+                                        id='email'
                                         required
                                         value={formData.email}
                                         type='text'
@@ -111,16 +113,17 @@ const Contact = forwardRef((props, ref) => {
                             </section>
 
                             <div className="flex flex-col w-full ">
-                                <label className="">Your Message</label>
+                                <label htmlFor="subject">Your Message</label>
                                 <textarea
                                     onChange={handleChange}
-                                    name='subiect'
+                                    name='subject'
+                                    id='subject'
                                     required
-                                    value={formData.subiect}
+                                    value={formData.subject}
                                     className="bg-transparent border-2 border-gray-600 h-48 rounded-lg"></textarea>
                             </div>
 
-                            <button type="submit" className=" bg-green-700 rounded-lg p-3 px-5 text-white lato-bold text-lg">Send <i className="fa-solid px-2 fa-arrow-right"></i></button>
+                            <button name='send message' type="submit" className=" bg-green-700 rounded-lg p-3 px-5 text-white lato-bold text-lg">Send <i className="fa-solid px-2 fa-arrow-right"></i></button>
 
                         </form>
 
@@ -135,7 +138,7 @@ const Contact = forwardRef((props, ref) => {
                             <i className="text-8xl text-green-700 fa-regular fa-circle-check"></i>
                             <p className="lato-light text-4xl text-center">The message was successfully sent!</p>
 
-                            <button type="button" className=" border-2 border-green-700 p-2 px-8 rounded-lg lato-bold text-lg" onClick={() => setFunction()}>Ok</button>
+                            <button name='confirm' type="button" className=" border-2 border-green-700 p-2 px-8 rounded-lg lato-bold text-lg" onClick={() => setFunction()}>Ok</button>
 
                         </div>
 

@@ -11,7 +11,7 @@ const NotFound = () => {
 
                 <div className="container flex justify-between mx-auto md:p-4 relative">
 
-                    <Link to='/' type='button' className='bg-transparent special-font font-black
+                    <Link to='/' type='button' name='back home' className='bg-transparent special-font font-black
                  text-xl sm:text-3xl lg:text-4xl'>MC</Link>
 
                    <Link to='/'>

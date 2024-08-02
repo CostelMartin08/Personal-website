@@ -7,6 +7,7 @@ export const Button = (props) => {
         <>
             <a
                 href={props.href}
+                name={props.name}
                 className={`${props.bg} border-2 border-[#3e3e3e] rounded-lg text-white px-4 py-3 
                 text-base lato-bold hover:border-[#fff] cursor-pointer transition`}
             >

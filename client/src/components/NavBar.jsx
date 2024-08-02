@@ -109,7 +109,9 @@ const NavBar = (props) => {
                             [1, 2, 3, 4, 5].map((index) => (
                                 <ul className="list lato-bold" key={index} onClick={() => scrollToComponent(index)}>
                                     <li className='my-auto'>
-                                        <button className="btn-style">
+                                        <button 
+                                        name='scrollToComponent'
+                                        className="btn-style">
                                             <p className={`${colorDrop} a-btn-style m-0`}>{text[index]}</p>
                                         </button>
                                     </li>

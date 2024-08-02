@@ -28,7 +28,7 @@ const CoursesCard = (props) => {
                 </p>
 
                 <div className="text-center">
-                    <button className="lato-light-italic">click for more</button>
+                    <button name='more content' className="lato-light-italic">click for more</button>
                 </div>
 
                 <div className="space-y-3">
