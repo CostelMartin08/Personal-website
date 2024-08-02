@@ -28,7 +28,7 @@ const ProjectsCard = (props) => {
 
 
                         <div className="flex flex-col items-center md:items-start space-y-2">
-                            <p className="lato-black text-xl xl:text-2xl line-clamp-1">{props.name}</p>
+                            <h3 className="lato-black text-xl xl:text-2xl line-clamp-1">{props.name}</h3>
                             <p className="lato-light text-lg text-zinc-400">{props.type}</p>
                         </div>
 
@@ -66,7 +66,7 @@ const ProjectsCard = (props) => {
             <div className="show-more flex flex-col justify-around rounded-xl space-y-4 p-3">
 
                 <div className="space-y-3">
-                    <h1 className="lato-black text-3xl">{props.name}</h1>
+                    <h3 className="lato-black text-3xl">{props.name}</h3>
 
                     <a href={props.visit} className="text-lg lato-light-italic underline">{props.visit}</a>
                 </div>

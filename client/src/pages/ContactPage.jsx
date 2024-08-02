@@ -73,7 +73,7 @@ const Contact = forwardRef((props, ref) => {
                     <div className=" space-y-8">
 
                         <div className="text-center space-y-3">
-                            <h4 className="lato-bold-italic text-4xl md:text-5xl">Send a message!</h4>
+                            <h2 className="lato-bold-italic text-4xl md:text-5xl">Send a message!</h2>
                             <p className="lato-light text-xl">Whether you want to ask me something or just say hello, you can do it.</p>
                         </div>
 

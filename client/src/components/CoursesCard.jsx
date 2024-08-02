@@ -18,7 +18,7 @@ const CoursesCard = (props) => {
                         <img className="object-cover" src={props.logo} alt='logo'></img>
                     </div>
 
-                    <p className="lato-black text-xl text-center p-2 line-clamp-2">{props.course}</p>
+                    <h3 className="lato-black text-xl text-center p-2 line-clamp-2">{props.course}</h3>
                     <p className="lato-light">{props.date}</p>
 
                 </div>
@@ -47,7 +47,7 @@ const CoursesCard = (props) => {
 
             <div className="show-more rounded-xl space-y-4 p-4">
 
-                <h1 className="lato-black text-2xl">{props.course}</h1>
+                <h3 className="lato-black text-2xl">{props.course}</h3>
 
                 <p className="text-xl">{props.description}</p>
             </div>

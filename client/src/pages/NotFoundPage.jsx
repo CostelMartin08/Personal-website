@@ -35,7 +35,7 @@ const NotFound = () => {
                 </div>
 
                 <div className="h-dvh flex justify-center items-center flex-col">
-                    <h1 className="not-found lato-bold">404</h1>
+                    <h2 className="not-found lato-bold">404</h2>
                     <p className="not-found-p lato-light">This website has only one page (for now).</p>
                 </div>
             </div>

@@ -23,7 +23,7 @@ const Projects = forwardRef((props, ref) => {
 
                 <div className="container mx-auto flex flex-col justify-center items-center h-dvh">
 
-                    <h3 className="text-4xl md:text-5xl md:py-3 lato-black">Projects</h3>
+                    <h2 className="text-4xl md:text-5xl md:py-3 lato-black">Projects</h2>
 
                     <div className="w-full xs:w-11/12 xl:w-11/12 2xl:w-3/4">
 

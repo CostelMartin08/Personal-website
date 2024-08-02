@@ -51,7 +51,7 @@ const Footer = forwardRef((props, ref) => {
 
                     <div className="flex flex-col justify-end">
 
-                        <button name='scrollToComponent' className="lato-black text-xl" onClick={() => scrollToComponent(0)}><i className="fa-solid fa-arrow-up fa-lg"></i></button>
+                        <button name='navigate up' className="lato-black text-xl" onClick={() => scrollToComponent(0)}><i className="fa-solid fa-arrow-up fa-lg"></i></button>
 
                     </div>
 
@@ -68,10 +68,10 @@ const Footer = forwardRef((props, ref) => {
 
                     </div>
                     <div className="mt-3 mt-md-0">
-                        <a href='https://www.linkedin.com/in/constantin-martinescu-b5a58526b/' className="text-white pe-2"><i className="fa-brands fa-linkedin fa-2xl"></i></a>
-                        <a href='https://github.com/CostelMartin08?tab=repositories' className="text-white px-2"><i className="fa-brands fa-square-github fa-2xl"></i></a>
-                        <a href='https://twitter.com/MartinescuCost2' className="text-white px-2"><i className="fa-brands fa-square-x-twitter fa-2xl"></i></a>
-                        <a href='https://www.instagram.com/costelmartinescu/' className="text-white ps-2"><i className="fa-brands fa-instagram fa-2xl"></i></a>
+                        <a name='linkedIn' href='https://www.linkedin.com/in/constantin-martinescu-b5a58526b/' className="text-white pe-2"><i className="fa-brands fa-linkedin fa-2xl"></i></a>
+                        <a name='gitHub' href='https://github.com/CostelMartin08?tab=repositories' className="text-white px-2"><i className="fa-brands fa-square-github fa-2xl"></i></a>
+                        <a name='twiter' href='https://twitter.com/MartinescuCost2' className="text-white px-2"><i className="fa-brands fa-square-x-twitter fa-2xl"></i></a>
+                        <a name='instagram' href='https://www.instagram.com/costelmartinescu/' className="text-white ps-2"><i className="fa-brands fa-instagram fa-2xl"></i></a>
                     </div>
                 </div>
 

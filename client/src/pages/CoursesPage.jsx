@@ -23,7 +23,7 @@ const Courses = forwardRef((props, ref) => {
 
             <div className="crs-pg space-y-1 container relative">
 
-                <h3 className="text-white text-center text-4xl md:text-5xl md:py-3 lato-black">Courses</h3>
+                <h2 className="text-white text-center text-4xl md:text-5xl md:py-3 lato-black">Courses</h2>
 
                 <Carousel />
 

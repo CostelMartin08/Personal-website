@@ -9,7 +9,7 @@ const Technology = forwardRef((props, ref) => {
 
             <section className="prj-pg flex flex-col justify-center items-center gap-5 md:gap-12">
 
-                <h3 className="text-xl sm:text-3xl md:text-5xl lato-black">I have learned and work with...</h3>
+                <h2 className="text-xl sm:text-3xl md:text-5xl lato-black">I have learned and work with...</h2>
 
                 <Logo />
 

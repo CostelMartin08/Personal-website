@@ -23,7 +23,7 @@ const AboutPage = forwardRef((props, ref) => {
 
                 <div className="mt-4 space-y-8 ">
 
-                    <h3 className="lato-bold text-3xl sm:text-5xl md:text-5xl text-color-principal mb-3 ">About me</h3>
+                    <h2 className="lato-bold text-3xl sm:text-5xl md:text-5xl text-color-principal mb-3 ">About me</h2>
 
                     <p className="indent-2 text-xl md:text-3xl lg:text-4xl tracking-wide">
                         Ready for a new step in my career, I am in search of a job opportunity.
