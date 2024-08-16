@@ -34,7 +34,7 @@ const AboutPage = forwardRef((props, ref) => {
 
                     <div className="flex justify-end md:pt-4">
 
-                        <a href="https://github.com/CostelMartin08/Personal-website/raw/main/client/src/assets/resume.pdf" download>
+                        <a href="https://github.com/CostelMartin08/Personal-website/raw/main/client/src/assets/MartinescuConstantin-CV.pdf" download>
 
                             <button name='download CV' onClick = {()=> logEventView('Download CV')} type="button" className="bg-teal-950 text-white p-3 lato-black px-4 rounded-xl">Resume <i className="fa-solid px-2 fa-file-arrow-down"></i></button>
                         </a>
