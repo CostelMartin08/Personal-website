@@ -29,7 +29,7 @@ const FirstPage = forwardRef((props, ref) => {
 
                         <h1 className="lato-black text-4xl lg:text-5xl">
 
-                            Junior Frontend <br/><span>Developer.</span>
+                            Junior Web <br/><span>Developer.</span>
 
                         </h1>
 
