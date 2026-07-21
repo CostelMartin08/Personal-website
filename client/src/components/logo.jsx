@@ -18,6 +18,7 @@ import Git from '../logo/15.webp';
 import Prisma from '../logo/16.webp';
 import Mongoose from '../logo/17.webp';
 import GitHub from '../logo/18.webp';
+import WordPress from '../logo/19.webp';
 
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Autoplay, EffectFlip } from 'swiper/modules';
@@ -61,7 +62,8 @@ const logos = {
     git: [
         { src: GitHub, alt: 'GitHub' },
         { src: Git, alt: 'Git' },
-    ],
+        {src:WordPress, alt:'WordPress'}
+    ]
 };
 
 const SwiperComponent = ({ logos, delay }) => {

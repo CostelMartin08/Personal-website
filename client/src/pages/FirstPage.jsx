@@ -29,13 +29,12 @@ const FirstPage = forwardRef((props, ref) => {
 
                         <h1 className="lato-black text-4xl lg:text-5xl">
 
-                            Junior Web <br/><span>Developer.</span>
+                            Junior Web <br /><span>Developer.</span>
 
                         </h1>
 
                         <p className="text-lg lato-light">
-                            I enjoy developing utility-focused frontend products
-                            while also providing a pleasant user experience.
+                            As a junior web developer, I’m passionate about creating functional, user-friendly web applications that solve real-world problems.
                         </p>
 
                     </div>
